@@ -28,7 +28,7 @@ const Banner = () => {
                 <span>CRoam</span> on <br></br> Crime off
               </h1>
               <h4>
-                <span> Carefree Roaming</span> 
+                <span> Carefree Roaming</span>
               </h4>
             </SectionTitle>
             <p>
@@ -38,24 +38,24 @@ const Banner = () => {
             </p>
 
             <VintageBox right={true} vintageOne={true}>
-              <Button className="banner-btn one" primary>
+              <Button onClick={() => {window.open("https://docs.google.com/forms/d/e/1FAIpQLSe9awuK5mEsuCDYRN5GfNDoNWFgnkLPm9dEMtRBC3azV9n9IA/viewform")}} className="banner-btn one" primary>
                 <FaDownload className="icon-left" />
-                Download V1.4
+                Get early beta access
               </Button>
-              <Button className="banner-btn two" secondary>
-                <FaPlay className="icon-left" /> Watch Now
-              </Button>
+              {/*<Button className="banner-btn two" secondary>*/}
+              {/*  <FaPlay className="icon-left" /> Watch Now*/}
+              {/*</Button>*/}
             </VintageBox>
           </Col>
 
           <Col sm={12} sm={5}>
             <div className="app-screen-image-wrapper">
-              <img src={AppScreenImage} alt="appion app screen" />
+              <img src={"/main.jpeg"} alt="appion app screen" />
               <div className="thumb one">
-                <img src={AppScreenThumb1} alt="appion app screen" />
+                <img src={"/helpm.jpeg"} alt="appion app screen" />
               </div>
               <div className="thumb two">
-                <img src={AppScreenThumb2} alt="appion app screen" />
+                <img src={"help1.jpeg"} alt="appion app screen" />
               </div>
             </div>
           </Col>

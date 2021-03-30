@@ -34,7 +34,7 @@ const Home = () => (
       <Testimonial />
       <Counter />
       <Getapp />
-      <News />
+      {/*<News />*/}
       <Client />
       <Contact />
       <Footer />

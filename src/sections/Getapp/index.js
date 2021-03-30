@@ -31,15 +31,15 @@ const GetApp = () => {
                 ad minim veniam quis nostrud exercitation.
               </p>
               <div className="btn-block">
-                <Link href="#">
-                  <a className="getapp-btn apl-btn">
-                    <DiAppstore />
-                    <p>
-                      Download iphone App
-                      <span>App Store</span>
-                    </p>
-                  </a>
-                </Link>
+                {/*<Link href="#">*/}
+                {/*  <a className="getapp-btn apl-btn">*/}
+                {/*    <DiAppstore />*/}
+                {/*    <p>*/}
+                {/*      Download iphone App*/}
+                {/*      <span>App Store</span>*/}
+                {/*    </p>*/}
+                {/*  </a>*/}
+                {/*</Link>*/}
 
                 <Link href="#">
                   <a className="getapp-btn">
@@ -55,7 +55,7 @@ const GetApp = () => {
           </Col>
           <Col xs={12} sm={6}>
             <div className="getapp-thumb">
-              <img src={AppSecreenImage} alt="get the app" />
+              <img src={"/main.jpeg"} alt="get the app" />
             </div>
           </Col>
         </Row>

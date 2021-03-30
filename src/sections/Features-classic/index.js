@@ -27,10 +27,9 @@ const FeaturesClassic = () => {
               <div className="features-icon">
                 <img src={Icon1} alt="prime app features icon" />
               </div>
-              <h3>Feature 1</h3>
+              <h3>Report Incident Instantly</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt.
+                Through CROAM you can report any criminal incidents instantly to the local authorities.
               </p>
             </div>
           </Col>
@@ -39,10 +38,9 @@ const FeaturesClassic = () => {
               <div className="features-icon">
                 <img src={Icon2} alt="prime app features icon" />
               </div>
-              <h3>Feature 2</h3>
+              <h3>SOS button enabled</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt.
+                Three click power button to initiate the emergency response.
               </p>
             </div>
           </Col>
@@ -51,10 +49,9 @@ const FeaturesClassic = () => {
               <div className="features-icon">
                 <img src={Icon3} alt="prime app features icon" />
               </div>
-              <h3>Feature 3</h3>
+              <h3>Keep family informed</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt.
+                Any incidents can be reported and your family members will be informed immediatedly.
               </p>
             </div>
           </Col>
@@ -63,10 +60,9 @@ const FeaturesClassic = () => {
               <div className="features-icon">
                 <img src={Icon4} alt="prime app features icon" />
               </div>
-              <h3>Feature 4</h3>
+              <h3>Take photos of criminals</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt.
+                CROAM app will take images of your surrounding and submit it as a proof of crime.
               </p>
             </div>
           </Col>
@@ -75,25 +71,24 @@ const FeaturesClassic = () => {
               <div className="features-icon">
                 <img src={Icon5} alt="prime app features icon" />
               </div>
-              <h3>Feature 5</h3>
+              <h3>Voice based initaiation</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt.
+                If you feel you are in an emergency situation shout "Help" or "Bachao" to initiate the response.
               </p>
             </div>
           </Col>
-          <Col xs={12} sm={6} md={4}>
-            <div className="fetures-block">
-              <div className="features-icon">
-                <img src={Icon6} alt="prime app features icon" />
-              </div>
-              <h3>Feature 6</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt.
-              </p>
-            </div>
-          </Col>
+          {/*<Col xs={12} sm={6} md={4}>*/}
+          {/*  <div className="fetures-block">*/}
+          {/*    <div className="features-icon">*/}
+          {/*      <img src={Icon6} alt="prime app features icon" />*/}
+          {/*    </div>*/}
+          {/*    <h3>Feature 6</h3>*/}
+          {/*    <p>*/}
+          {/*      Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do*/}
+          {/*      eiusmod tempor incididunt.*/}
+          {/*    </p>*/}
+          {/*  </div>*/}
+          {/*</Col>*/}
         </Row>
       </Container>
     </FeturesSectionWrapper>
