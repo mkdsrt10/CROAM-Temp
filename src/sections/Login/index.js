@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Link from "next/link";
 import styled from "styled-components";
 import { Container, Row, Col } from "reusecore/Layout";
@@ -44,12 +44,23 @@ const AForgot = styled.a`
   text-decoration: none !important;
 `;
 
-const Login = () => {
+const Login = ({admin}) => {
+    const [email, setEmail] = useState("");
+    const [pass, setPass] = useState("");
+    function loginF(){
+        console.log(email, pass, admin)
+        if(email=== "test@gmail.com" && pass ==="123test" && !admin){
+            window.open("/blog-grid")
+        }
+        if(email=== "testadmin@gmail.com" && pass ==="123test" && admin){
+            window.open("/blog-grid-admin")
+        }
+    }
   return (
     <>
         <PageWrapper>
             <BoxStyled bg="#f7f8fa">
-            
+
             <BoxInner className="d-flex align-items-center">
                 <Container className="text-center">
                 <Box my="100px" mx="auto">
@@ -60,12 +71,13 @@ const Login = () => {
                             <Title className="mb-2">Sign In</Title>
                             <Text>Enter your account details below</Text>
                         </div>
-                        <Box mt={3} mb={3}>
-                            <Input type="email" placeholder="Username" />
+                        <Box mb={3}>
+                            <Input type="email" onChange={(e) => {setEmail(e.target.value)}} placeholder="Username" />
                         </Box>
                         <Box mb={4} className="position-relative">
                             <Input
                             type="password"
+                            onChange={(e) => {setPass(e.target.value)}}
                             placeholder="Password"
                             css={`
                                 padding-right: 9.25rem;
@@ -75,14 +87,12 @@ const Login = () => {
                         <Box mb={3} className="text-left">
                             <Checkbox>Keep me signed in</Checkbox>
                         </Box>
-                        <Link href = "/blog-grid">
-                        <Button width="100%" type="submit" borderRadius={10}>
+                        <Button width="100%" onClick={loginF} borderRadius={10}>
                             Login
                         </Button>
-                        </Link>
-                        <Box mt={3}>
-                          Don't have an account yet? <Link href = "/signup"><a>Signup.</a></Link>
-                        </Box>
+                            <Box mt={3}>
+                                Don't have an account yet? <Link href = "/signup"><a>Signup.</a></Link>
+                            </Box>
                         </FormStyled>
                     </Col>
                     </Row>

@@ -47,7 +47,7 @@ const AppScreensClassic = () => {
       {
         breakpoint: 1025,
         settings: {
-          
+
         },
       },
       {
@@ -90,7 +90,7 @@ const AppScreensClassic = () => {
               mb={50}
             >
               <h2>
-                <span>Case studies </span>
+                {/*<span>Case studies </span>*/}
               </h2>
             </SectionTitle>
           </Col>
