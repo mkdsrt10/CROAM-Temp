@@ -19,6 +19,11 @@ const Data = {
           path: "/login-admin"
         }
       ]
+    },
+    {
+      name: "Logout",
+      path: "/",
+      offset: "-50"
     }
   ]
 };

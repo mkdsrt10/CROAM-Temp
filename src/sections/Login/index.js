@@ -90,6 +90,9 @@ const Login = ({admin}) => {
                         <Button width="100%" onClick={loginF} borderRadius={10}>
                             Login
                         </Button>
+                            <Box mt={3}>
+                                Don't have an account yet? <Link href = "/signup"><a>Signup.</a></Link>
+                            </Box>
                         </FormStyled>
                     </Col>
                     </Row>
