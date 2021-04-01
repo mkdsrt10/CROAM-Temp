@@ -11,12 +11,12 @@ const Data = {
       offset: "-50",
       subItems: [
         {
-          name: "Blog",
-          path: "/blog-grid"
+          name: "User",
+          path: "/login"
         },
         {
-          name: "B-Reporter",
-          path: ""
+          name: "Admin",
+          path: "/login"
         }
       ]
     }

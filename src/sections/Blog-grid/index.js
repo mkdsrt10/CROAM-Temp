@@ -244,9 +244,6 @@ const BlogPage = () => {
                 </Row>
                   </div>
               </Col>
-              <Col xs={12} lg={4}>
-                <Sidebar/>
-              </Col>
             </Row>
           </Container>
         </div>
