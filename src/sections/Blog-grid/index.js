@@ -60,6 +60,13 @@ const BlogPage = ({admin}) => {
                               Date: 15 Sep 2020
                               Location: SDA, Hauz Khas
                           </p>
+                          {
+                              admin &&
+                              <p className='post-entry'>
+                                  Contact Number : 8503936914
+                                  Relative Number : 999898987
+                              </p>
+                          }
                       </div>
                     </div>
                   </Col>
@@ -91,6 +98,13 @@ const BlogPage = ({admin}) => {
                                     Date: 15 Sep 2020
                                     Location: SDA, Hauz Khas
                                 </p>
+                                {
+                                    admin &&
+                                    <p className='post-entry'>
+                                        Contact Number : 8503936914
+                                        Relative Number : 999898987
+                                    </p>
+                                }
                             </div>
                         </div>
                     </Col>
