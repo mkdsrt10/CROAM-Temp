@@ -56,11 +56,11 @@ const Login = () => {
                     <Row className="justify-content-center">
                     <Col lg="7" xl="6">
                         <FormStyled>
-                        <div className="mb-5">
+                        <div className="mb-7">
                             <Title className="mb-2">Sign In</Title>
                             <Text>Enter your account details below</Text>
                         </div>
-                        <Box mb={3}>
+                        <Box mt={3} mb={3}>
                             <Input type="email" placeholder="Username" />
                         </Box>
                         <Box mb={4} className="position-relative">
@@ -80,6 +80,9 @@ const Login = () => {
                             Login
                         </Button>
                         </Link>
+                        <Box mt={3}>
+                          Don't have an account yet? <Link href = "/signup"><a>Signup.</a></Link>
+                        </Box>
                         </FormStyled>
                     </Col>
                     </Row>
