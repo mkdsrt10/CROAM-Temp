@@ -17,7 +17,7 @@ const Home = () =>
         <ThemeProvider theme={theme}>
             <Main title="Appion React Gatsby nextjs landing">
                 <GlobalStyle />
-                <Login admin={false}/>
+                <Login admin={true}/>
                 <Footer />
             </Main>
         </ThemeProvider>

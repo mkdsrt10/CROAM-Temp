@@ -11,236 +11,89 @@ import blogThumb1 from 'assets/images/classic/screens/screens-1.png';
 import blogThumb2 from 'assets/images/classic/screens/screens-2.png';
 import blogThumb3 from 'assets/images/classic/screens/screens-3.png';
 import blogThumb4 from 'assets/images/classic/screens/screens-4.png';
-import blogThumb5 from 'assets/images/classic/screens/screens-5.png'; 
-import blogThumb6 from 'assets/images/classic/screens/screens-6.png'; 
+import blogThumb5 from 'assets/images/classic/screens/screens-5.png';
+import blogThumb6 from 'assets/images/classic/screens/screens-6.png';
 
 
 import { BlogPageWrapper } from './blogGrid.style';
 
-const BlogPage = () => {
+const BlogPage = ({admin}) => {
   return (
     <BlogPageWrapper>
-      <PageHeader 
-        title="Latest News" 
-        author={{name: 'Alexa', profile: '/#'}}
+      <PageHeader
+        title={admin?"Your area latest report":"Nikhil | Your latest report"}
+        areaName={"Hauz Khas"}
+        admin={admin}
       />
 
         <div className="blog-page-wrapper">
           <Container>
             <Row>
-              <Col xs={12} lg={8}>
+              <Col xs={12} lg={12}>
                 <div className='blog-grid-wrapper'>
                 <Row>
-                  <Col xs={12} sm={6}>
+                  <Col xs={12} sm={4}>
                     <div className='post-block'>
                       <div className='post-thumb-block'>
-                          <Link href="/blog-single">
                             <a>
-                                <img src={blogThumb1} alt='img' />
+                                <img src={"Sindhi-market.jpeg"} alt='img' />
                             </a>
-                          </Link>
                       </div>
                       <div className="post-content-block">
-                          <div className='post-meta-block'>
-                          <span>In: </span>
-                          <Link href="/blog-single">
-                            <a>Discussion</a>
-                          </Link>
-                          <span className='divider'>/</span>
-                          <span>15 Sep 2020</span>
-                          </div>
-                          <h2 className='post-title'>
-                            <Link href="/blog-single">
-                              <a>
-                                  Now led tedious shy.
-                              </a>
-                            </Link>
-                          </h2>
+                          {/*<div className='post-meta-block'>*/}
+                          {/*<span>In: </span>*/}
+                          {/*<Link href="/blog-single">*/}
+                          {/*  <a>Discussion</a>*/}
+                          {/*</Link>*/}
+                          {/*<span className='divider'>/</span>*/}
+                          {/*<span>15 Sep 2020</span>*/}
+                          {/*</div>*/}
+                          {
+                              admin &&
+                              <h2 className='post-title'>
+                                  <a>
+                                      Nikhil Rawat
+                                  </a>
+                              </h2>
+                          }
                           <p className='post-entry'>
-                          Answer misery adieus add wooded how nay men before though.
-                          Pretended belonging contented mrs suffering.
+                              Date: 15 Sep 2020
+                              Location: SDA, Hauz Khas
                           </p>
-                          <Link href="/blog-single"> 
-                            <a className="readmore-btn">see more <IoIosArrowRoundForward/></a>
-                          </Link>
                       </div>
                     </div>
                   </Col>
-                  <Col xs={12} sm={6}>
-                    <div className='post-block'>
-                      <div className='post-thumb-block'>
-                          <Link href="/blog-single"> 
-                            <a>
-                              <img src={blogThumb2} alt='img' />
-                            </a> 
-                          </Link>
-                      </div>
-                      <div className="post-content-block">
-                          <div className='post-meta-block'>
-                          <span>In: </span>
-                          <Link href="/blog-single"> 
-                             <a>Discussion</a>
-                          </Link>
-                          <span className='divider'>/</span>
-                          <span>15 Sep, 2020</span>
-                          </div>
-                          <h2 className='post-title'>
-                            <Link href="/blog-single"> 
-                              <a>
-                                Now led tedious shy.
-                              </a>
-                            </Link>
-                          </h2>
-                          <p className='post-entry'>
-                          Answer misery adieus add wooded how nay men before though.
-                          Pretended belonging contented mrs suffering.
-                          </p>
-                          <Link href="/blog-single">  
-                            <a className="readmore-btn">see more <IoIosArrowRoundForward/></a>
-                          </Link>
-                      </div>
-                    </div>
-                  </Col>
-                  <Col xs={12} sm={6}>
-                    <div className='post-block'>
-                      <div className='post-thumb-block'>
-                          <Link href="/blog-single">  
-                            <a>
-                              <img src={blogThumb3} alt='img' />
-                            </a>
-                          </Link>
-                      </div>
-                      <div className="post-content-block">
-                          <div className='post-meta-block'>
-                          <span>In: </span>
-                          <Link href="/blog-single">  
-                            <a >Discussion</a>
-                          </Link>
-                          <span className='divider'>/</span>
-                          <span>15 Sep, 2020</span>
-                          </div>
-                          <h2 className='post-title'>
-                          <Link href="/blog-single">  
-                            <a>
-                                Now led tedious shy.
-                            </a>
-                          </Link>
-                          </h2>
-                          <p className='post-entry'>
-                          Answer misery adieus add wooded how nay men before though.
-                          Pretended belonging contented mrs suffering.
-                          </p>
-                          <Link href="/blog-single">  
-                            <a className="readmore-btn">see more <IoIosArrowRoundForward/></a>
-                          </Link>
-                      </div>
-                    </div>
-                  </Col>
-                  <Col xs={12} sm={6}>
-                    <div className='post-block'>
-                      <div className='post-thumb-block'>
-                          <Link href="/blog-single">  
-                            <a>
-                              <img src={blogThumb4} alt='img' />
-                            </a>
-                          </Link>
-                      </div>
-                      <div className="post-content-block">
-                          <div className='post-meta-block'>
-                          <span>In: </span>
-                          <Link href="/blog-single">  
-                            <a>Discussion</a>
-                          </Link>
-                          <span className='divider'>/</span>
-                          <span>15 Sep, 2020</span>
-                          </div>
-                          <h2 className='post-title'>
-                          <Link href="/blog-single">  
-                            <a>
-                              Now led tedious shy.
-                            </a>
-                          </Link>
-                          </h2>
-                          <p className='post-entry'>
-                          Answer misery adieus add wooded how nay men before though.
-                          Pretended belonging contented mrs suffering.
-                          </p>
-                          <Link href="/blog-single">  
-                            <a className="readmore-btn">see more <IoIosArrowRoundForward/></a>
-                          </Link>
-                      </div>
-                    </div>
-                  </Col>
-                  <Col xs={12} sm={6}>
-                    <div className='post-block'>
-                      <div className='post-thumb-block'>
-                        <Link href="/blog-single">  
-                          <a>
-                            <img src={blogThumb5} alt='img' />
-                          </a>
-                        </Link>
-                      </div>
-                      <div className="post-content-block">
-                          <div className='post-meta-block'>
-                          <span>In: </span>
-                          <Link href="/blog-single">  
-                            <a>Discussion</a>
-                          </Link>
-                          <span className='divider'>/</span>
-                          <span>15 Sep, 2020</span>
-                          </div>
-                          <h2 className='post-title'>
-                            <Link href="/blog-single">  
-                              <a>
-                                  Now led tedious shy.
-                              </a>
-                            </Link>
-                          </h2>
-                          <p className='post-entry'>
-                          Answer misery adieus add wooded how nay men before though.
-                          Pretended belonging contented mrs suffering.
-                          </p>
-                          <Link href="/blog-single">  
-                            <a className="readmore-btn">see more <IoIosArrowRoundForward/></a>
-                          </Link>
-                      </div>
-                    </div>
-                  </Col>
-                  <Col xs={12} sm={6}>
-                    <div className='post-block'>
-                      <div className='post-thumb-block'>
-                        <Link href="/blog-single">  
-                          <a>
-                            <img src={blogThumb6} alt='img' />
-                          </a>
-                        </Link>
-                      </div>
-                      <div className="post-content-block">
-                          <div className='post-meta-block'>
-                          <span>In: </span>
-                          <Link href="/blog-single">  
-                            <a>Discussion</a>
-                          </Link>
-                          <span className='divider'>/</span>
-                          <span>15 Sep, 2020</span>
-                          </div>
-                          <h2 className='post-title'>
-                          <Link href="/blog-single">  
-                            <a>
-                                Now led tedious shy.
-                            </a>
-                          </Link>
-                          </h2>
-                          <p className='post-entry'>
-                          Answer misery adieus add wooded how nay men before though.
-                          Pretended belonging contented mrs suffering.
-                          </p>
-                          <Link href="/blog-single">  
-                            <a className="readmore-btn">see more <IoIosArrowRoundForward/></a>
-                          </Link>
-                      </div>
-                    </div>
-                  </Col>
+                    <Col xs={12} sm={4}>
+                        <div className='post-block'>
+                            <div className='post-thumb-block'>
+                                    <a>
+                                        <img src={"/download.jpeg"} alt='img' />
+                                    </a>
+                            </div>
+                            <div className="post-content-block">
+                                {/*<div className='post-meta-block'>*/}
+                                {/*<span>In: </span>*/}
+                                {/*<Link href="/blog-single">*/}
+                                {/*  <a>Discussion</a>*/}
+                                {/*</Link>*/}
+                                {/*<span className='divider'>/</span>*/}
+                                {/*<span>15 Sep 2020</span>*/}
+                                {/*</div>*/}
+                                {
+                                    admin &&
+                                    <h2 className='post-title'>
+                                        <a>
+                                            Shubham Sahu
+                                        </a>
+                                    </h2>
+                                }
+                                <p className='post-entry'>
+                                    Date: 15 Sep 2020
+                                    Location: SDA, Hauz Khas
+                                </p>
+                            </div>
+                        </div>
+                    </Col>
                 </Row>
                   </div>
               </Col>
