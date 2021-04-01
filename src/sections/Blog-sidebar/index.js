@@ -110,7 +110,7 @@ const SeideBar = () => {
 
       </div>
 
-      <div className='sidebar-widgets catagorie'>
+      {/* <div className='sidebar-widgets catagorie'>
         <div className="widgets-title">
             <h3>Categories</h3>
         </div>
@@ -164,7 +164,7 @@ const SeideBar = () => {
             </Link> 
           </li>
         </ul>
-      </div>
+      </div> */}
       <div className='sidebar-widgets tags'>
         <div className="widgets-title">
             <h3>Tags</h3>
