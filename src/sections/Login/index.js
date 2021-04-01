@@ -67,7 +67,7 @@ const Login = ({admin}) => {
                     <Row className="justify-content-center">
                     <Col lg="7" xl="6">
                         <FormStyled>
-                        <div className="mb-5">
+                        <div className="mb-7">
                             <Title className="mb-2">Sign In</Title>
                             <Text>Enter your account details below</Text>
                         </div>

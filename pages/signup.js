@@ -11,13 +11,13 @@ import { GlobalStyle } from "sections/app.style";
 import theme from "../src/reusecore/utils/theme";
 
 const Home = () => (
-    <ThemeProvider theme={theme}>
-        <Main title="Appion React Gatsby nextjs landing">
-            <GlobalStyle />
-            <SignUp />
-            <Footer />
-        </Main>
-    </ThemeProvider>
+  <ThemeProvider theme={theme}>
+    <Main title="Appion React Gatsby nextjs landing">
+      <GlobalStyle />
+      <SignUp />
+      <Footer />
+    </Main>
+  </ThemeProvider>
 );
 
 export default Home;
