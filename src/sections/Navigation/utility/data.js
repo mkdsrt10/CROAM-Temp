@@ -35,8 +35,8 @@ const Data = {
           path: "/login"
         },
         {
-          name: "Admin",
-          path: "/login"
+          name: "Smart Police",
+          path: "/login-admin"
         }
       ]
     }

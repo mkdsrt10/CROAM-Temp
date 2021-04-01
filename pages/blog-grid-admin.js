@@ -14,8 +14,8 @@ const Home = () => (
   <ThemeProvider theme={theme}>
     <Main title="Appion React Gatsby nextjs landing">
       <GlobalStyle />
-      <Navigation admin={false} />
-      <BlogPage admin={false} />
+      <Navigation />
+      <BlogPage admin={true} />
       <Footer />
     </Main>
   </ThemeProvider>

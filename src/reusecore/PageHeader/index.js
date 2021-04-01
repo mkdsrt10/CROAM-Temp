@@ -3,7 +3,7 @@ import React from "react";
 import Particle from "reusecore/Particle";
 import PageHeaderWrapper from "./pageHeader.style";
 
-const PageHeader = ({ categories, title, author }) => {
+const PageHeader = ({ categories, title, author, areaName }) => {
   return (
     <PageHeaderWrapper>
       <Particle />
@@ -25,7 +25,7 @@ const PageHeader = ({ categories, title, author }) => {
         {!categories && title && (
           <div className="breadcrumbs page">
             <>
-              <span> Home </span> <span> > </span> {title}
+              <span> Location </span> <span> > </span> {areaName}
             </>
           </div>
         )}
