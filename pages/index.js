@@ -27,11 +27,12 @@ const Home = () => (
     <Main title="CRoam">
       <GlobalStyle />
       <Navigation />
-      <AppScreens />
+
       <Banner />
+      <AppScreens />
       <AboutClassic />
       <FeaturesClassic />
-      <Testimonial />
+      {/*<Testimonial />*/}
       {/*<Counter />*/}
       <Getapp />
       {/*<News />*/}

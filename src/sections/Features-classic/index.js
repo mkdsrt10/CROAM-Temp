@@ -18,14 +18,14 @@ const FeaturesClassic = () => {
       <Container>
         <SectionTitle UniWidth="65%">
           <h2>
-            <span>Features </span> in our application.
+            What<span> CROAM </span>app do
           </h2>
         </SectionTitle>
         <Row>
           <Col xs={12} sm={6} md={4}>
             <div className="fetures-block">
               <div className="features-icon">
-                <img src={Icon1} alt="prime app features icon" />
+                <img src={"/police-car.png"} alt="prime app features icon" />
               </div>
               <h3>Report Incident Instantly</h3>
               <p>
@@ -36,7 +36,7 @@ const FeaturesClassic = () => {
           <Col xs={12} sm={6} md={4}>
             <div className="fetures-block">
               <div className="features-icon">
-                <img src={Icon2} alt="prime app features icon" />
+                <img src={"/bullhorn.png"} alt="prime app features icon" />
               </div>
               <h3>SOS button enabled</h3>
               <p>
@@ -47,7 +47,7 @@ const FeaturesClassic = () => {
           <Col xs={12} sm={6} md={4}>
             <div className="fetures-block">
               <div className="features-icon">
-                <img src={Icon3} alt="prime app features icon" />
+                <img src={"/family.png"} alt="prime app features icon" />
               </div>
               <h3>Keep family informed</h3>
               <p>
@@ -58,9 +58,9 @@ const FeaturesClassic = () => {
           <Col xs={12} sm={6} md={4}>
             <div className="fetures-block">
               <div className="features-icon">
-                <img src={Icon4} alt="prime app features icon" />
+                <img src={"/cctv.png"} alt="prime app features icon" />
               </div>
-              <h3>Take photos of criminals</h3>
+              <h3>Capture the proof</h3>
               <p>
                 CROAM app will take images of your surrounding and submit it as a proof of crime.
               </p>
@@ -69,7 +69,7 @@ const FeaturesClassic = () => {
           <Col xs={12} sm={6} md={4}>
             <div className="fetures-block">
               <div className="features-icon">
-                <img src={Icon5} alt="prime app features icon" />
+                <img src={"/walkie-talkie.png"} alt="prime app features icon" />
               </div>
               <h3>Voice based initaiation</h3>
               <p>

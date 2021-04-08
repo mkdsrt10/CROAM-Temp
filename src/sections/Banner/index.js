@@ -32,9 +32,12 @@ const Banner = () => {
               </h4>
             </SectionTitle>
             <p>
-            Safety has become a major concern today. The possibility that a person may have to face an emergency situation, even at their own homes, is increasing continuously. Considerable loss of health and property has to be born by innocent people and in many cases, it is just a matter of seconds between life and death. Criminals are getting more and more expert at committing crimes and leaving no evidence; and there is no point in seeking legal help without evidence. This makes deserving victims devoid of justice.
-            <br></br><br></br>
-            We, AnjaneyaServices is a group which is concerned about these issues. We provide systems and solutions for personal safety and well-being. Through our innovative sytsems, we aim 0% crime and 100% justice to all. We provide efficient emergency response and alerting systems and are aiming towards a nation-wide standard emergency response system.
+              <br></br><br></br>
+              Safety has become a major concern today. We, AnjaneyaServices is a group which is concerned about these issues. We provide systems and solutions for personal safety and well-being. Through our innovative sytsems, we aim 0% crime and 100% justice to all. We provide efficient emergency response and alerting systems and are aiming towards a nation-wide standard emergency response system.
+            {/*Safety has become a major concern today. The possibility that a person may have to face an emergency situation, even at their own homes, is increasing continuously. Considerable loss of health and property has to be born by innocent people and in many cases, it is just a matter of seconds between life and death. Criminals are getting more and more expert at committing crimes and leaving no evidence; and there is no point in seeking legal help without evidence. This makes deserving victims devoid of justice.*/}
+            {/*<br></br><br></br>*/}
+
+            {/*We, AnjaneyaServices is a group which is concerned about these issues. We provide systems and solutions for personal safety and well-being. Through our innovative sytsems, we aim 0% crime and 100% justice to all. We provide efficient emergency response and alerting systems and are aiming towards a nation-wide standard emergency response system.*/}
             </p>
 
             <VintageBox right={true} vintageOne={true}>
@@ -50,13 +53,13 @@ const Banner = () => {
 
           <Col sm={12} sm={5}>
             <div className="app-screen-image-wrapper">
-              <img src={"/main.jpeg"} alt="appion app screen" />
+              <img src={"/1.png"} alt="appion app screen" />
               <div className="thumb one">
-                <img src={"/helpm.jpeg"} alt="appion app screen" />
+                <img src={"/2.png"} alt="appion app screen" />
               </div>
-              <div className="thumb two">
-                <img src={"help1.jpeg"} alt="appion app screen" />
-              </div>
+              {/*<div className="thumb two">*/}
+              {/*  <img src={"help1.jpeg"} alt="appion app screen" />*/}
+              {/*</div>*/}
             </div>
           </Col>
         </Row>
