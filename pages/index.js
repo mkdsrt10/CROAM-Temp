@@ -7,6 +7,7 @@ import Navigation from "sections/Navigation";
 import Banner from "sections/Banner";
 import AboutClassic from "sections/About-classic";
 import FeaturesClassic from "sections/Features-classic";
+import FeaturesClassic2 from "sections/Features-classic2";
 import FaqClassic from "sections/Faq-Classic";
 import Integrations from "sections/Integrations";
 import AppScreens from "sections/AppScreens-classic";
@@ -32,6 +33,7 @@ const Home = () => (
       <AppScreens />
       <AboutClassic />
       <FeaturesClassic />
+      <FeaturesClassic2 />
       {/*<Testimonial />*/}
       {/*<Counter />*/}
       <Getapp />
