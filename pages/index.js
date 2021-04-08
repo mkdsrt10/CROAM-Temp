@@ -17,7 +17,8 @@ import News from "sections/News";
 import Getapp from "sections/Getapp";
 import Client from "sections/Client";
 import Footer from "sections/Footer-classic";
-import Contact from "sections/Contact"
+import Contact from "sections/Contact";
+import Hero from "sections/Hero";
 
 import { GlobalStyle } from "sections/app.style";
 import theme from "theme/classic/themeStyles";
@@ -27,6 +28,7 @@ const Home = () => (
     <Main title="CRoam">
       <GlobalStyle />
       <Navigation />
+      <Hero />
       <AppScreens />
       <Banner />
       <AboutClassic />

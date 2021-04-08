@@ -53,9 +53,15 @@ const GetApp = () => {
               </div>
             </div>
           </Col>
-          <Col xs={12} sm={6}>
-            <div className="getapp-thumb">
-              <img src={"/main.jpeg"} alt="get the app" />
+          <Col sm={6}>
+            <div className="app-screen-image-wrapper">
+              <img src={"/main.jpeg"} alt="appion app screen" />
+              <div className="thumb one">
+                <img src={"/helpm.jpeg"} alt="appion app screen" />
+              </div>
+              <div className="thumb two">
+                <img src={"help1.jpeg"} alt="appion app screen" />
+              </div>
             </div>
           </Col>
         </Row>

@@ -3,10 +3,31 @@ import styled from 'styled-components';
 import AppSecreenBG from 'assets/images/app/get-app/get-app-bg.png';
 
 const AppScreenSctionWrapper = styled.div`
-  padding: 150px 0 60px 0;
-  background: url(${AppSecreenBG}) no-repeat;
-  background-size: cover;
-  background-position: center;
+  padding: 80px 0 60px 0;
+  position: relative;
+    overflow: hidden;
+    &:before{
+    content: "";
+    position: absolute;
+    width: 500%;
+    height: 40%;
+    top: 30%;
+    left: -10%;
+    z-index: -1;
+    background:  #e6e6f5 no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: rotate(-3deg);
+    }
+
+  .heading {
+    font-weight: 500;
+    font-size: 3.7vw; 
+    display: flex; 
+    justify-content: center; 
+    color: black;
+    
+  }
 
   .view-more-button {
     height: 100%;
@@ -37,6 +58,7 @@ const AppScreenSctionWrapper = styled.div`
   }
 
   .slick-slide {
+    margin: 80px 0 0 0;
     position: relative;
     transform: scale(0.9);
   }
@@ -59,6 +81,7 @@ const AppScreenSctionWrapper = styled.div`
 
   .slick-arrow {
     border: none;
+    display: none;
     position: absolute;
     top: -18.5%;
     right: 3%;
@@ -77,7 +100,20 @@ const AppScreenSctionWrapper = styled.div`
     right: 8%;
   }
   @media only screen and (max-width: 912px) {
-    padding: 130px 0 200px 0;
+    &:before{
+      content: "";
+      position: absolute;
+      width: 500%;
+      height: 40%;
+      top: 17%;
+      left: -10%;
+      z-index: -1;
+      background:  #e6e6f5 no-repeat;
+      background-size: cover;
+      background-position: center;
+      transform: rotate(-3deg);
+      }
+    padding: 60px 0 200px 0;
     .slick-arrow{
       top: auto;
       bottom: -100px;
@@ -86,8 +122,25 @@ const AppScreenSctionWrapper = styled.div`
     .slick-prev-icon{
       right: 50%;
     }
+    .slick-slide {
+      margin: 60px 0 0 0;
+    }
   }
   @media only screen and (max-width: 568px) {
+    &:before{
+      content: "";
+      position: absolute;
+      width: 500%;
+      height: 40%;
+      top: 35%;
+      left: -10%;
+      z-index: -1;
+      background:  #e6e6f5 no-repeat;
+      background-size: cover;
+      background-position: center;
+      transform: rotate(-3deg);
+    }
+    padding: 50px 0 0 0;
     .section-title-block{
       text-align: center;
       h4{
@@ -100,8 +153,12 @@ const AppScreenSctionWrapper = styled.div`
     .view-more-button{
       display: none;
     }
+    .slick-slide {
+      margin: 50px 0 0 0;
+    }
   }
   @media only screen and (max-width: 480px) {
+    padding: 40px 0 0 0;
     .slick-slide[data-index~='-2']{
       margin-left: 0;
     }
@@ -113,6 +170,7 @@ const AppScreenSctionWrapper = styled.div`
       margin-right: 0;
     }
     .slick-slide{
+      margin: 40px 0 0 0;
       &.slick-active{
         transform: scale(1);
       }

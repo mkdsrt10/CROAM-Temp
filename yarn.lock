@@ -1316,11 +1316,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-<<<<<<< HEAD
-"@babel/runtime@^7.12.5":
-=======
 "@babel/runtime@^7.12.0", "@babel/runtime@^7.12.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.7":
->>>>>>> 184687315c6fab75f551efbd132740354bfc0dc5
   version "7.13.10"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.13.10.tgz#47d42a57b6095f4468da440388fdbad8bebf0d7d"
   integrity sha512-4QPkjJq6Ns3V/RgpEahRk+AGfL0eO6RHHtTWoNNr5mO49G6B5+X6d6THgWEAvTrznU5xYpbAlVKRYcsCgh/Akw==
@@ -11048,6 +11044,11 @@ react-app-polyfill@^1.0.6:
     raf "^3.4.1"
     regenerator-runtime "^0.13.3"
     whatwg-fetch "^3.0.0"
+
+react-country-region-selector@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/react-country-region-selector/-/react-country-region-selector-3.0.2.tgz#979c07e574e26d0c089f450e28c2cfdd0735ee9e"
+  integrity sha512-0U36SdE4F01Q3/uGDOHVFqhIrNR34v2cKnptUOflV5H51cwNxDLLASkB+PNDPd8emBP2i83e7HZdocWdjvIC/g==
 
 react-countup@^4.2.3:
   version "4.3.3"

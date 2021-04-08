@@ -37,9 +37,9 @@ const AppScreensClassic = () => {
   const settings = {
     autoplay: true,
     infinite: true,
-    dots: false,
+    dots: true,
+    swipeToSlide: true,
     className: "center",
-    fade: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 500,
@@ -75,64 +75,56 @@ const AppScreensClassic = () => {
         },
       },
     ],
-    prevArrow: <ArrowLeft />,
-    nextArrow: <ArrowRight />,
+    arrows: false,
   };
   return (
     <AppScreenSctionWrapper>
       <Container>
         <Row>
-          <Col xs={12} sm={12}>
-            <SectionTitle
-              className="section-title-block"
-              leftAlign={true}
-              UniWidth="100%"
-              mb={50}
-            >
-              <h2>
-                {/*<span>Case studies </span>*/}
-              </h2>
-            </SectionTitle>
+          <Col xs={12}>
+            <div className="heading">
+              CRoam, the next generation watchman.
+            </div>
           </Col>
         </Row>
         <Row>
           <Col xs={12}>
             <SlickSlider {...settings}>
               <SliderItem key={"1"}>
-                <img src={screen1} alt="img" width="100%"/>
+                <img src={screen1} alt="img" width="100%" />
               </SliderItem>
               <SliderItem key={"1"}>
-                <img src={screen2} alt="img" width="100%"/>
+                <img src={screen2} alt="img" width="100%" />
               </SliderItem>
               <SliderItem key={"1"}>
-                <img src={screen3} alt="img" width="100%"/>
+                <img src={screen3} alt="img" width="100%" />
               </SliderItem>
               <SliderItem key={"1"}>
-                <img src={screen4} alt="img" width="100%"/>
+                <img src={screen4} alt="img" width="100%" />
               </SliderItem>
               <SliderItem key={"1"}>
-                <img src={screen5} alt="img" width="100%"/>
+                <img src={screen5} alt="img" width="100%" />
               </SliderItem>
               <SliderItem key={"1"}>
-                <img src={screen6} alt="img" width="100%"/>
+                <img src={screen6} alt="img" width="100%" />
               </SliderItem>
               <SliderItem key={"1"}>
-                <img src={screen7} alt="img" width="100%"/>
+                <img src={screen7} alt="img" width="100%" />
               </SliderItem>
               <SliderItem key={"1"}>
-                <img src={screen8} alt="img" width="100%"/>
+                <img src={screen8} alt="img" width="100%" />
               </SliderItem>
               <SliderItem key={"1"}>
-                <img src={screen9} alt="img" width="100%"/>
+                <img src={screen9} alt="img" width="100%" />
               </SliderItem>
               <SliderItem key={"1"}>
-                <img src={screen10} alt="img" width="100%"/>
+                <img src={screen10} alt="img" width="100%" />
               </SliderItem>
               <SliderItem key={"1"}>
-                <img src={screen12} alt="img" width="100%"/>
+                <img src={screen12} alt="img" width="100%" />
               </SliderItem>
               <SliderItem key={"1"}>
-                <img src={screen13} alt="img" width="100%"/>
+                <img src={screen13} alt="img" width="100%" />
               </SliderItem>
             </SlickSlider>
           </Col>
@@ -143,3 +135,4 @@ const AppScreensClassic = () => {
 };
 
 export default AppScreensClassic;
+

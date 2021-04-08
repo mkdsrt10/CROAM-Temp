@@ -1,32 +1,50 @@
-import React from 'react';
-import Link from 'next/link' 
+import React, { useState } from 'react';
+import Link from 'next/link'
 
 
-import {FaSearch } from 'react-icons/fa'; 
+import { FaSearch } from 'react-icons/fa';
 
 import Button from 'reusecore/Button';
+import { CountryDropdown, RegionDropdown, CountryRegionData } from 'react-country-region-selector';
 
 import WdThumb1 from 'assets/images/blog/widgets-thumb/01.png';
 import WdThumb2 from 'assets/images/blog/widgets-thumb/02.png';
-import WdThumb3 from 'assets/images/blog/widgets-thumb/03.png'; 
+import WdThumb3 from 'assets/images/blog/widgets-thumb/03.png';
 
 import BlogSideBarWrapper from './blogSidebar.style';
 
-const SeideBar = () => {
+const SideBar = () => {
+  const [country, setCountry] = useState("");
+  const [region, setRegion] = useState("");
+
   return (
     <BlogSideBarWrapper>
       <div className='sidebar-widgets'>
-        <div className="search-box">
-          <input type='text' placeholder='Search here...' />
-          <Button>
-            <FaSearch />
-          </Button>
+        <div className="widgets-title">
+          <h3>Filter Posts</h3>
+        </div>
+        <div className='dropdown'>
+          <CountryDropdown
+            className='input'
+            value={country}
+            onChange={(country) => setCountry(country)}
+          />
+        </div>
+
+        <div className='dropdown'>
+          <RegionDropdown
+            className='input'
+            disableWhenEmpty={true}
+            country={country}
+            value={region}
+            onChange={setRegion}
+          />
         </div>
       </div>
 
       <div className='sidebar-widgets recent-post'>
         <div className="widgets-title">
-            <h3>Latest Post</h3>
+          <h3>Latest Post</h3>
         </div>
         <div className="recent-post-block">
           <img src={WdThumb1} alt="prime-app" />
@@ -52,9 +70,9 @@ const SeideBar = () => {
           <img src={WdThumb2} alt="prime-app" />
           <div className="recent-post-content-block">
             <Link href="#">
-            <a>
-              <h3> Now led tedious shy. </h3>
-            </a>
+              <a>
+                <h3> Now led tedious shy. </h3>
+              </a>
             </Link>
             <div className="post-meta-block">
               By:{' '}
@@ -72,9 +90,9 @@ const SeideBar = () => {
           <img src={WdThumb3} alt="prime-app" />
           <div className="recent-post-content-block">
             <Link href="#">
-            <a>
-              <h3> Now led tedious shy. </h3>
-            </a>
+              <a>
+                <h3> Now led tedious shy. </h3>
+              </a>
             </Link>
             <div className="post-meta-block">
               By:{' '}
@@ -87,14 +105,14 @@ const SeideBar = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="recent-post-block">
           <img src={WdThumb1} alt="prime-app" />
           <div className="recent-post-content-block">
             <Link href="#">
-            <a>
-              <h3> Now led tedious shy. </h3>
-            </a>
+              <a>
+                <h3> Now led tedious shy. </h3>
+              </a>
             </Link>
             <div className="post-meta-block">
               By:{' '}
@@ -167,37 +185,37 @@ const SeideBar = () => {
       </div> */}
       <div className='sidebar-widgets tags'>
         <div className="widgets-title">
-            <h3>Tags</h3>
+          <h3>Tags</h3>
         </div>
-        <ul> 
+        <ul>
 
           <li>
-            <Link href="#"> 
+            <Link href="#">
               <a>Development</a>
             </Link>
           </li>
           <li>
-            <Link href="#"> 
+            <Link href="#">
               <a>Technology</a>
             </Link>
           </li>
           <li>
-            <Link href="#"> 
+            <Link href="#">
               <a>Testing</a>
             </Link>
           </li>
           <li>
-            <Link href="#"> 
+            <Link href="#">
               <a>App Landing</a>
             </Link>
           </li>
           <li>
-            <Link href="#"> 
+            <Link href="#">
               <a>App Landing</a>
             </Link>
           </li>
           <li>
-            <Link href="#"> 
+            <Link href="#">
               <a>Science</a>
             </Link>
           </li>
@@ -207,4 +225,4 @@ const SeideBar = () => {
   );
 };
 
-export default SeideBar;
+export default SideBar;

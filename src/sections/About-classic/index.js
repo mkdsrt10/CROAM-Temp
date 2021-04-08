@@ -15,7 +15,6 @@ const AboutClassic = () => {
     <AboutSectionWrapper id="about">
       <Container>
         <SectionTitle UniWidth="65%">
-        <h4> About </h4>
           <h2>
             Roam carefree with <span>CRoam</span>.
           </h2>

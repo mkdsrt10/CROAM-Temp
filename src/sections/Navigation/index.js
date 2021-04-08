@@ -10,7 +10,7 @@ import ScrollspyMenu from "./utility/ScrollspyMenu";
 import NavigationWrap from "./navigation.style";
 
 const Navigation = () => {
-  const [expand, setExpand] = useState(false); 
+  const [expand, setExpand] = useState(false);
 
   useEffect(() => {
     const header = document.getElementById("navbar");
@@ -27,7 +27,7 @@ const Navigation = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  
+
 
   return (
     <NavigationWrap id="navbar" className="nav-block">

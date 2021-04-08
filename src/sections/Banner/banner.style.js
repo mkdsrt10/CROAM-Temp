@@ -4,7 +4,7 @@ import imgHero from "assets/images/classic/hero-bg.png";
 
 const BannerSectionWrapper = styled.div`
   /* color: #1D316C; */
-  padding-top: 190px;
+  padding-top: 50px;
   background: url(${imgHero}) no-repeat;
   background-size: 45% 100%;
   background-position: center right;
