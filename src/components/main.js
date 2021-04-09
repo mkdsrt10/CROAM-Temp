@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import FavIcon from 'assets/images/favicon.png';
+import FavIcon from 'assets/images/croamlogo.png';
 
 const Main = ({ children, title = "this is the dummy title" }) => {
   return (

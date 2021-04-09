@@ -91,7 +91,7 @@ export const BlogPageWrapper = styled.div`
        &:hover{
            svg{
                margin-left: 3px;
-                transform: scale(1.2);
+               transform: scale(1.2);
            }
        }
     } 

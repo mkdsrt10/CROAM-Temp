@@ -1,47 +1,23 @@
 import styled from "styled-components";
 
-import imgHero from "assets/images/headingwall1.jpg";
+import imgHero from "assets/images/classic/hero-bg.png";
 
-const HeroSectionWrapper = styled.div`
+const TeamSectionWrapper = styled.div`
   /* color: #1D316C; */
-  margin-bottom: 40px;
-  background: url(${imgHero}) center center/cover no-repeat;
-  height: 700px;
-  width: 100%;
-  dispay: flex;
-  flex-deirection: column;
-  align-items: center;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2), 0px 5px 10px rgba(0, 0, 0, 0.3);
-  object-fit: contain;
+  margin-top: 15vh;
+  padding-top: 13vh;
+  box-shadow: 0px 10px 10px  rgba(0, 0, 0, 0.2), 0px -5px 10px  rgba(0, 0, 0, 0.2);
+
+  .card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   p {
-    margin: 0 0 75px 0;
+    margin: 0 0 60px 0;
   }
-  .section-title {
-    h4 {
-      font-size: 85%;
-      display: flex;
-      align-items: center;
-      text-transform: uppercase;
-      span {
-        background: ${props => props.theme.primaryColor};
-        padding: 7px 13px;
-        color: light green;
-        border-radius: 25px;
-        margin-right: 7px;
-        line-height: 100%;
-      }
-    }
-    h1 {
-      font-weight: 300;
-      font-size: 55px;
-      line-height: 75px;
-      margin: 130px 0 35px 0;
-      span{
-        font-weight: 600;
-      }
-      color: white;
-    }
-  }
+    
   .banner-btn.one {
     background: #52de97;
     color: #e0f5ea;
@@ -99,34 +75,18 @@ const HeroSectionWrapper = styled.div`
     p {
       margin: 0 0 45px 0;
     }
-    .section-title {
-        h1 {
-            font-weight: 300;
-            font-size: 50px;
-            line-height: 75px;
-            margin: 130px 0 0 0;
-            span{
-                font-weight: 600;
-            }
-            color: white;
-        }
-    }
   }
-  @media only screen and (max-width: 990px) {
-    
+  @media only screen and (max-width: 912px) {
+    margin: 30px 0 0 0;
     padding-top: 120px;
+    background: none;
     .section-title {
       margin-bottom: 18px;
       width: 100%;
       h1 {
-        font-weight: 300;
-        font-size: 55px;
-        line-height: 75px;
-        margin: 380px 0 35px 0;
-        span{
-          font-weight: 600;
-        }
-        color: white;
+        font-size: 33px;
+        line-height: 45px;
+        margin-bottom: 0;
       }
       h4 {
         margin-bottom: 8px;
@@ -159,14 +119,8 @@ const HeroSectionWrapper = styled.div`
     }
   }
   @media only screen and (max-width: 760px) {
-    padding: 100px 0 0 0;
-    .section-title {
-        h1 {
-            font-size: 42px;
-            line-height: 50px;
-            margin: 450px 0 0 20px;
-        }
-    }
+    padding: 100px 0 0 20px;
+
     .banner-btn + .banner-btn {
       margin-left: 30px;
     }
@@ -176,25 +130,16 @@ const HeroSectionWrapper = styled.div`
     }
   }
   @media only screen and (max-width: 568px) {
-    .section-title {
-        h1 {
-            font-size: 36px;
-            line-height: 50px;
-          margin: 450px 0 0 20px;
-        }
-    }
     .app-screen-image-wrapper {
       display: none;
     }
   }
 
   @media only screen and (max-width: 480px) {
-    padding: 120px 0 0px 0;
     .section-title {
       h1 {
-        font-size: 36px;
+        font-size: 35px;
         line-height: 50px;
-        margin: 450px 0 0 20px;
       }
     }
     .vintage-box {
@@ -206,9 +151,9 @@ const HeroSectionWrapper = styled.div`
   @media only screen and (max-width: 380px) {
     .section-title {
       h1 {
-        font-size: 36px;
-        line-height: 50px;
-        margin: 450px 0 0 20px;
+        font-size: 30px;
+        line-height: 46px;
+        margin: 0 0 30px 0;
       }
       h4 {
         font-size: 12px;
@@ -226,12 +171,11 @@ const HeroSectionWrapper = styled.div`
   @media only screen and (max-width: 330px) {
     .section-title {
       h1 {
-        margin: 450px 0 0 20px;
-        font-size: 36px;
-        line-height: 50px;
+        font-size: 23px;
+        line-height: 35px;
       }
     }
   }
 `;
 
-export default HeroSectionWrapper;
+export default TeamSectionWrapper;

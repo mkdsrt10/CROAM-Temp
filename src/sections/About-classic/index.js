@@ -12,15 +12,19 @@ import AboutSectionWrapper from "./about.style";
 
 const AboutClassic = () => {
   return (
-    <AboutSectionWrapper id="about">
+    <AboutSectionWrapper >
       <Container>
         <SectionTitle UniWidth="65%">
-          <h2>
-            Roam carefree with <span>CRoam</span>.
+          <h2 style={{marginBottom: 30}}>
+            <span>Crime at every corner.</span>
           </h2>
         </SectionTitle>
-        CRoam is a smart wearable based safety system designed for the safety of an individuals. Running in the background, the system responses to the instinct of a person in emergency instantly without actually activating it when in the need. A sequence of action is initiated which attempt to protect the user against a potential hazard.
-        We are looking forward for the acceptability of our solution. Filling <a href = 'https://docs.google.com/forms/d/e/1FAIpQLSe9awuK5mEsuCDYRN5GfNDoNWFgnkLPm9dEMtRBC3azV9n9IA/viewform'>this form</a> will not take more than two minutes. In return, you may be offered sample hardware/ beta release of the software/ both for free.
+        <div style={{display: "flex", justifyContent: "center", paddingBottom: 120}}>
+          Safety has become a major concern today. 
+          The possibility that a person may have to face an emergency situation, even at their own homes, is increasing continuously. Considerable loss of health and property has to be born by innocent people and in many cases, it is just a matter of seconds between life and death. 
+          Criminals are getting more and more expert at committing crimes and leaving no evidence; and there is no point in seeking legal help without evidence. 
+          This makes deserving victims devoid of justice.
+        </div>
       </Container>
     </AboutSectionWrapper>
   );

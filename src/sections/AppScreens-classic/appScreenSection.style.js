@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import AppSecreenBG from 'assets/images/app/get-app/get-app-bg.png';
 
 const AppScreenSctionWrapper = styled.div`
-  padding: 80px 0 60px 0;
+  padding: 40px 0 60px 0;
   position: relative;
     overflow: hidden;
     &:before{
@@ -19,13 +19,13 @@ const AppScreenSctionWrapper = styled.div`
     background-position: center;
     transform: rotate(-3deg);
     }
+    box-shadow: 0px 10px 10px  rgba(0, 0, 0, 0.2), 0px -5px 10px  rgba(0, 0, 0, 0.2);
 
   .heading {
-    font-weight: 500;
     font-size: 3.7vw; 
     display: flex; 
     justify-content: center; 
-    color: black;
+    color: #1d316c;
     
   }
 
@@ -83,7 +83,7 @@ const AppScreenSctionWrapper = styled.div`
     border: none;
     display: none;
     position: absolute;
-    top: -18.5%;
+    top: 3%;
     right: 3%;
     background: none;
     font-size: 50px;

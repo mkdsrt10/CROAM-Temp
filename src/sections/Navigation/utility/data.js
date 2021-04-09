@@ -16,11 +16,6 @@ const Data = {
       offset: "-50"
     },
     {
-      name: "Testimonial",
-      path: "testimonial",
-      offset: "-50"
-    },
-    {
       name: "Contact",
       path: "contact",
       offset: "-50"

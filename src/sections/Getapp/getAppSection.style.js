@@ -4,12 +4,14 @@ import AppSecreenBG from 'assets/images/app/get-app/get-app-bg.png';
 import imgHero from "assets/images/classic/hero-bg.png";
 
 const GetAppSectionWrap = styled.div`
-    padding: 20px 0 0 0;
+    padding: 30px;
+    margin-bottom: 5vh;
     background: url(${imgHero}) no-repeat;
     background-size: 45% 100%;
     background-position: center right;
     position: relative;
-    overflow: hidden;
+    overflow: hidden;   
+
     .section__particle{
         position: absolute;
         &.one{

@@ -19,9 +19,11 @@ import Client from "sections/Client";
 import Footer from "sections/Footer-classic";
 import Contact from "sections/Contact";
 import Hero from "sections/Hero";
+import TeamSection from "../src/sections/Team";
 
 import { GlobalStyle } from "sections/app.style";
 import theme from "theme/classic/themeStyles";
+
 
 const Home = () => (
   <ThemeProvider theme={theme}>
@@ -29,15 +31,16 @@ const Home = () => (
       <GlobalStyle />
       <Navigation />
       <Hero />
+      <AboutClassic />
       <AppScreens />
       <Banner />
-      <AboutClassic />
       <FeaturesClassic />
-      <Testimonial />
+      {/* <Testimonial /> */}
       {/*<Counter />*/}
       <Getapp />
       {/*<News />*/}
       {/*<Client />*/}
+      <TeamSection />
       <Contact />
       <Footer />
     </Main>

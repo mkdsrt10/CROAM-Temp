@@ -75,18 +75,19 @@ const AppScreensClassic = () => {
         },
       },
     ],
-    arrows: false,
+    nextArrow: <ArrowRight />,
+    prevArrow: <ArrowLeft />,
   };
   return (
     <AppScreenSctionWrapper>
       <Container>
-        <Row>
+        {/* <Row>
           <Col xs={12}>
             <div className="heading">
-              CRoam, the next generation watchman.
+              Everyone is affected by crime.
             </div>
           </Col>
-        </Row>
+        </Row> */}
         <Row>
           <Col xs={12}>
             <SlickSlider {...settings}>
