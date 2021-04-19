@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import styled from "styled-components";
 import { Container, Row, Col } from "reusecore/Layout";
+import { useHistory } from 'react-router-dom';
 
-import { Title, Button, Box, Text, Input, InputGroup, Checkbox } from "reusecore/Core";
+import {
+  Title,
+  Button,
+  Box,
+  Text,
+  Input,
+  InputGroup,
+  Checkbox,
+} from "reusecore/Core";
 
 import PageWrapper from "reusecore/PageWrapper";
 import Logo from "reusecore/Logo";
 import { device } from "reusecore/utils";
+import { use } from "chai";
 
 const BoxStyled = styled(Box)`
   min-height: 100vh;
@@ -37,6 +47,76 @@ const AForgot = styled.a`
 `;
 
 const SignUp = () => {
+  
+  const [user, setUser] = useState({
+    name: "",
+    email: "",
+    mobileNum: "",
+    password: "",
+    cpassword: "",
+    location: "",
+    pincode: "",
+    emergencyName1: "",
+    emergencyNum1: "",
+    emergencyName2: "",
+    emergencyNum2: "",
+  });
+
+  const handleInputs = async (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+
+    await setUser({ ...user, [name]: value });
+  };
+
+  const registerUser = async (e) => {
+    // console.log("Clicked");
+    e.preventDefault();
+
+    const {
+      name,
+      email,
+      mobileNum,
+      password,
+      cpassword,
+      location,
+      pincode,
+      emergencyName1,
+      emergencyNum1,
+      emergencyName2,
+      emergencyNum2,
+    } = user;
+
+    const res = await fetch("http://192.168.0.91:3001/register", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        mobileNum,
+        password,
+        cpassword,
+        location,
+        pincode,
+        emergencyName1,
+        emergencyNum1,
+        emergencyName2,
+        emergencyNum2,
+      }),
+    });
+
+    const data = await res.json();
+    if(res.status === 201) {
+      alert(data.message);
+      window.open("/login", "_self");
+    }
+    else {
+      alert(data.error);
+    }
+  };
+
   return (
     <>
       <PageWrapper>
@@ -46,44 +126,109 @@ const SignUp = () => {
               <Box my="150px" mx="auto">
                 <Row className="justify-content-center">
                   <Col lg="7" xl="6">
-                    <FormStyled>
+                    <FormStyled method="POST">
                       <div className="mb-5">
                         <Title className="mb-2">Sign Up</Title>
-                        
                       </div>
                       <Box mb={3}>
-                        <Input type="name" placeholder="Name" />
+                        <Input
+                          type="name"
+                          placeholder="Name"
+                          name="name"
+                          value={user.name}
+                          onChange={handleInputs}
+                        />
                       </Box>
                       <Box mb={3}>
-                        <Input type="email" placeholder="E-mail" />
+                        <Input
+                          onChange={handleInputs}
+                          type="email"
+                          placeholder="E-mail"
+                          name="email"
+                          value={user.email}
+                        />
                       </Box>
                       <Box mb={3}>
-                        <Input type="tel" placeholder="Mobile number" />
+                        <Input
+                          onChange={handleInputs}
+                          type="password"
+                          placeholder="Password"
+                          name="password"
+                          value={user.password}
+                        />
                       </Box>
                       <Box mb={3}>
-                        <Input type="text" placeholder="Location" />
+                        <Input
+                          onChange={handleInputs}
+                          type="password"
+                          placeholder="Confirm password"
+                          name="cpassword"
+                          value={user.cpassword}
+                        />
+                      </Box>
+                      <Box mb={3}>
+                        <Input
+                          onChange={handleInputs}
+                          type="tel"
+                          placeholder="Mobile number"
+                          name="mobileNum"
+                          value={user.mobileNum}
+                        />
+                      </Box>
+                      <Box mb={3}>
+                        <Input
+                          onChange={handleInputs}
+                          type="text"
+                          placeholder="Location"
+                          name="location"
+                          value={user.location}
+                        />
                       </Box>
                       <Box mb={4}>
-                        <Input type="number" placeholder="PIN code" />
+                        <Input
+                          onChange={handleInputs}
+                          type="number"
+                          placeholder="PIN code"
+                          name="pincode"
+                          value={user.pincode}
+                        />
                       </Box>
-                      <label for="EC Info">Emergency Contact Information: </label>
+                      <label>Emergency Contact Information: </label>
                       <Box mt={3} mb={3}>
-                          <Input type = "name" placeholder="Name 1"></Input>
+                        <Input
+                          onChange={handleInputs}
+                          type="name"
+                          placeholder="Name 1"
+                          name="emergencyName1"
+                          value={user.emergencyName1}
+                        ></Input>
                       </Box>
                       <Box mb={3}>
-                          <Input type = "tel" placeholder="Phone no. 1"></Input>
+                        <Input
+                          onChange={handleInputs}
+                          type="tel"
+                          placeholder="Phone no. 1"
+                          name="emergencyNum1"
+                          value={user.emergencyNum1}
+                        ></Input>
                       </Box>
                       <Box mb={3}>
-                          <Input type = "text" placeholder="Relation 1"></Input>
+                        <Input
+                          onChange={handleInputs}
+                          type="name"
+                          placeholder="Name 2"
+                          name="emergencyName2"
+                          value={user.emergencyName2}
+                        ></Input>
                       </Box>
                       <Box mb={3}>
-                          <Input type = "name" placeholder="Name 2"></Input>
-                      </Box>
-                      <Box mb={3}>
-                          <Input type = "tel" placeholder="Phone no. 2"></Input>
-                      </Box>
-                      <Box mb={3}>
-                          <Input type = "text" placeholder="Relation 2"></Input>
+                        <Input
+                          onChange={handleInputs}
+                          type="tel"
+                          placeholder="Phone no. 2"
+                          name="emergencyNum2"
+                          value={user.emergencyNum2}
+                        ></Input>
                       </Box>
                       <Box mb={3} className="text-left">
                         <Checkbox>
@@ -93,11 +238,16 @@ const SignUp = () => {
                           </Link>
                         </Checkbox>
                       </Box>
-                    <Link href = "/blog-grid">
-                      <Button width="100%" type="submit" borderRadius={10}>
-                        Get Started
-                      </Button>
-                    </Link>
+                      <Link href="/blog-grid">
+                        <Button
+                          width="100%"
+                          type="submit"
+                          borderRadius={10}
+                          onClick={registerUser}
+                        >
+                          Get Started
+                        </Button>
+                      </Link>
                       <Box mt={3}>
                         Already have an account?{" "}
                         <Link href="/login">

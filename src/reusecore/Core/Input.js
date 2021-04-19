@@ -66,7 +66,7 @@ const InputAnimation = styled.div`
 
   label {
     background-color: ${({ theme }) => theme.colors.light};
-    font-size: 18px;
+    font-size: 8px;
     font-weight: 300;
     color: ${({ theme }) => theme.colors.darkShade};
     top: 50%;

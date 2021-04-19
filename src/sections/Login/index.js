@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import styled from "styled-components";
 import { Container, Row, Col } from "reusecore/Layout";
@@ -44,63 +44,95 @@ const AForgot = styled.a`
   text-decoration: none !important;
 `;
 
-const Login = ({admin}) => {
-    const [email, setEmail] = useState("");
-    const [pass, setPass] = useState("");
-    function loginF(){
-        console.log(email, pass, admin)
-        if(email=== "test@gmail.com" && pass ==="123test" && !admin){
-            window.open("/blog-grid")
-        }
-        if(email=== "testadmin@gmail.com" && pass ==="123test" && admin){
-            window.open("/blog-grid-admin")
-        }
+const Login = ({ admin }) => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const loginF = async (e) => {
+    e.preventDefault();
+
+    const res = await fetch("http://192.168.0.91:3001/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email,
+        password
+      }),
+    });
+    console.log(res);
+
+    const data = await res.json();
+
+    if (res.status === 200) {
+      alert(data.message);
+      window.open("/blog-grid", "_self");
+    } else {
+      alert(data.error);
     }
+  };
+
   return (
     <>
-        <PageWrapper>
-            <BoxStyled bg="#f7f8fa">
-
-            <BoxInner className="d-flex align-items-center">
-                <Container className="text-center">
-                <Box my="100px" mx="auto">
-                    <Row className="justify-content-center">
-                    <Col lg="7" xl="6">
-                        <FormStyled>
-                        <div className="mb-7">
-                            <Title className="mb-2">Sign In</Title>
-                            <Text>Enter your account details below</Text>
-                        </div>
-                        <Box mb={3}>
-                            <Input type="email" onChange={(e) => {setEmail(e.target.value)}} placeholder="Username" />
-                        </Box>
-                        <Box mb={4} className="position-relative">
-                            <Input
-                            type="password"
-                            onChange={(e) => {setPass(e.target.value)}}
-                            placeholder="Password"
-                            css={`
-                                padding-right: 9.25rem;
-                            `}
-                            />
-                        </Box>
-                        <Box mb={3} className="text-left">
-                            <Checkbox>Keep me signed in</Checkbox>
-                        </Box>
-                        <Button width="100%" onClick={loginF} borderRadius={10}>
-                            Login
-                        </Button>
-                            <Box mt={3}>
-                                Don't have an account yet? <Link href = "/signup"><a>Signup.</a></Link>
-                            </Box>
-                        </FormStyled>
-                    </Col>
-                    </Row>
-                </Box>
-                </Container>
-            </BoxInner>
-            </BoxStyled>
-        </PageWrapper>
+      <PageWrapper>
+        <BoxStyled bg="#f7f8fa">
+          <BoxInner className="d-flex align-items-center">
+            <Container className="text-center">
+              <Box my="100px" mx="auto">
+                <Row className="justify-content-center">
+                  <Col lg="7" xl="6">
+                    <FormStyled method="POST">
+                      <div className="mb-7">
+                        <Title className="mb-2">Sign In</Title>
+                        <Text>Enter your account details below</Text>
+                      </div>
+                      <Box mb={3}>
+                        <Input
+                          type="email"
+                          onChange={(e) => {
+                            setEmail(e.target.value);
+                          }}
+                          placeholder="E-mail"
+                        />
+                      </Box>
+                      <Box mb={4} className="position-relative">
+                        <Input
+                          type="password"
+                          onChange={(e) => {
+                            setPassword(e.target.value);
+                          }}
+                          placeholder="Password"
+                          css={`
+                            padding-right: 9.25rem;
+                          `}
+                        />
+                      </Box>
+                      <Box mb={3} className="text-left">
+                        <Checkbox>Keep me signed in</Checkbox>
+                      </Box>
+                      <Button
+                        type="submit"
+                        width="100%"
+                        onClick={loginF}
+                        borderRadius={10}
+                      >
+                        Login
+                      </Button>
+                      <Box mt={3}>
+                        Don't have an account yet?{" "}
+                        <Link href="/signup">
+                          <a>Signup.</a>
+                        </Link>
+                      </Box>
+                    </FormStyled>
+                  </Col>
+                </Row>
+              </Box>
+            </Container>
+          </BoxInner>
+        </BoxStyled>
+      </PageWrapper>
     </>
   );
 };
