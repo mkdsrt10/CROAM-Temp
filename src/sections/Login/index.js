@@ -51,7 +51,7 @@ const Login = ({ admin }) => {
   const loginF = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("http://192.168.0.91:3001/login", {
+    const res = await fetch("https://croam-web-backend.vercel.app/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

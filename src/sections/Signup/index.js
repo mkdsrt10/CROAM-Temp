@@ -87,7 +87,7 @@ const SignUp = () => {
       emergencyNum2,
     } = user;
 
-    const res = await fetch("http://192.168.0.91:3001/register", {
+    const res = await fetch("https://croam-web-backend.vercel.app/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -13,7 +13,7 @@ import { BlogPageWrapper } from "./blogGrid.style";
 const BlogPage = ({ admin }) => {
   const callBlogPage = async () => {
     try {
-      const res = await fetch("http://192.168.0.91:3001/blog", {
+      const res = await fetch("https://croam-web-backend.vercel.app/blog", {
         method: "GET",
         headers: {
           Accept: "application/json",
