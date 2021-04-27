@@ -6,6 +6,7 @@ const HeroSectionWrapper = styled.div`
   /* color: #1D316C; */
   margin-bottom: 40px;
   background: url(${imgHero}) center center/cover no-repeat;
+  background-position: 50% 50%;
   height: 700px;
   width: 100%;
   dispay: flex;

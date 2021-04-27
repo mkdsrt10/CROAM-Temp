@@ -7,13 +7,13 @@ import { SlickSlider, SliderItem } from "reusecore/SlickSlider";
 
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 
-import screen1 from "assets/images/classic/screens/screens-1.png";
-import screen2 from "assets/images/classic/screens/screens-2.png";
-import screen3 from "assets/images/classic/screens/screens-3.png";
-import screen4 from "assets/images/classic/screens/screens-4.png";
-import screen5 from "assets/images/classic/screens/screens-5.png";
-import screen6 from "assets/images/classic/screens/screens-6.png";
-import screen7 from "assets/images/classic/screens/screens-7.png";
+import screen1 from "assets/images/classic/screens/news1.png";
+import screen2 from "assets/images/classic/screens/news2.png";
+import screen3 from "assets/images/classic/screens/news3.png";
+import screen4 from "assets/images/classic/screens/news4.png";
+import screen5 from "assets/images/classic/screens/news5.png";
+import screen6 from "assets/images/classic/screens/news6.png";
+import screen7 from "assets/images/classic/screens/news7.png";
 import screen8 from "assets/images/classic/screens/screens-8.png";
 import screen9 from "assets/images/classic/screens/screens-9.png";
 import screen10 from "assets/images/classic/screens/screens-10.png";
@@ -76,7 +76,7 @@ const AppScreensClassic = () => {
       },
     ],
     nextArrow: <ArrowRight />,
-    prevArrow: <ArrowLeft />,
+    prevArrow: <ArrowLeft />
   };
   return (
     <AppScreenSctionWrapper>
@@ -147,6 +147,16 @@ const AppScreensClassic = () => {
                   <div className = "slider-text">                  
                     <p>
                       With CRoam, help will be right there. 
+                    </p>
+                  </div>
+                </div>
+              </SliderItem>
+              <SliderItem key={"7"}>
+              <div className="slider-item">
+                  <img src={screen7} alt="img" width="100%" />
+                  <div className = "slider-text">                  
+                    <p>
+                      Roam carefree with CRoam. 
                     </p>
                   </div>
                 </div>

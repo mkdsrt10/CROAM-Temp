@@ -103,12 +103,13 @@ const AppScreenSctionWrapper = styled.div`
     border: none;
     display: none;
     position: absolute;
-    top: 3%;
+    top: 0%;
     right: 3%;
     background: none;
     font-size: 50px;
     cursor: pointer;
     opacity: 0.7;
+    z-index: 999;
 
     &:hover {
       opacity: 1;
@@ -117,7 +118,7 @@ const AppScreenSctionWrapper = styled.div`
   }
 
   .slick-prev-icon {
-    right: 8%;
+    right: 92%;
   }
   @media only screen and (max-width: 912px) {
     &:before{

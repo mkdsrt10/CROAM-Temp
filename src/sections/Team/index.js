@@ -57,7 +57,7 @@ const TeamSection = () => {
             <CardExample
               img={Pic3}
               title={"Ayush Tripathi"}
-              text={"Ph.D."}
+              text={"Ph.D. Student"}
               dept={"Electrical Engineering"}
               affiliation={"IIT Delhi"}
             />
