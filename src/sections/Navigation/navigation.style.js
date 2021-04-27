@@ -101,18 +101,18 @@ const NavigationWrap = styled.header`
     }
   }
   .logo{
-    margin-top: 7px;
+    margin-top: 10px;
     margin-bottom: 5px;
     transition: all 0.8s cubic-bezier(0.3, 0.8, 0.2, 1) 0s;
     img{
-      width: 60px;
+      width: 120px;
     }
   }
   &.scrolled{
     background: white;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px;
     .logo{
-        width: 60px;
+        width: 120px;
     } 
     .nav{
       li{

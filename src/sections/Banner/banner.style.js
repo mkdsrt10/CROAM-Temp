@@ -8,6 +8,7 @@ const BannerSectionWrapper = styled.div`
   background: url(${imgHero}) no-repeat;
   background-size: 45% 100%;
   background-position: center right;
+  background-attachment: fixed;
 
   .card-wrapper {
     display: flex;

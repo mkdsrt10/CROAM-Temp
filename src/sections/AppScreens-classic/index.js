@@ -92,40 +92,64 @@ const AppScreensClassic = () => {
           <Col xs={12}>
             <SlickSlider {...settings}>
               <SliderItem key={"1"}>
-                <img src={screen1} alt="img" width="100%" />
+                <div className="slider-item">
+                  <img src={screen1} alt="img" width="100%" />
+                  <div className = "slider-text">                  
+                    <p>
+                      CRoam, the next generation watchman.  
+                    </p>
+                  </div>
+                </div>
               </SliderItem>
-              <SliderItem key={"1"}>
-                <img src={screen2} alt="img" width="100%" />
+              <SliderItem key={"2"}>
+              <div className="slider-item">
+                  <img src={screen2} alt="img" width="100%" />
+                  <div className = "slider-text">                  
+                    <p>
+                      With CRoam, you are never alone.
+                    </p>
+                  </div>
+                </div>
               </SliderItem>
-              <SliderItem key={"1"}>
-                <img src={screen3} alt="img" width="100%" />
+              <SliderItem key={"3"}>
+              <div className="slider-item">
+                  <img src={screen3} alt="img" width="100%" />
+                  <div className = "slider-text">                  
+                    <p>
+                      Alert! CRoam is watching you...
+                    </p>
+                  </div>
+                </div>
               </SliderItem>
-              <SliderItem key={"1"}>
-                <img src={screen4} alt="img" width="100%" />
+              <SliderItem key={"4"}>
+              <div className="slider-item">
+                  <img src={screen4} alt="img" width="100%" />
+                  <div className = "slider-text">                  
+                    <p>
+                      With CRoam, carry CCTV on your wrist.  
+                    </p>
+                  </div>
+                </div>
               </SliderItem>
-              <SliderItem key={"1"}>
-                <img src={screen5} alt="img" width="100%" />
+              <SliderItem key={"5"}>
+              <div className="slider-item">
+                  <img src={screen5} alt="img" width="100%" />
+                  <div className = "slider-text">                  
+                    <p>
+                      Police will reach you before you reach police.
+                    </p>
+                  </div>
+                </div>
               </SliderItem>
-              <SliderItem key={"1"}>
-                <img src={screen6} alt="img" width="100%" />
-              </SliderItem>
-              <SliderItem key={"1"}>
-                <img src={screen7} alt="img" width="100%" />
-              </SliderItem>
-              <SliderItem key={"1"}>
-                <img src={screen8} alt="img" width="100%" />
-              </SliderItem>
-              <SliderItem key={"1"}>
-                <img src={screen9} alt="img" width="100%" />
-              </SliderItem>
-              <SliderItem key={"1"}>
-                <img src={screen10} alt="img" width="100%" />
-              </SliderItem>
-              <SliderItem key={"1"}>
-                <img src={screen12} alt="img" width="100%" />
-              </SliderItem>
-              <SliderItem key={"1"}>
-                <img src={screen13} alt="img" width="100%" />
+              <SliderItem key={"6"}>
+              <div className="slider-item">
+                  <img src={screen6} alt="img" width="100%" />
+                  <div className = "slider-text">                  
+                    <p>
+                      With CRoam, help will be right there. 
+                    </p>
+                  </div>
+                </div>
               </SliderItem>
             </SlickSlider>
           </Col>

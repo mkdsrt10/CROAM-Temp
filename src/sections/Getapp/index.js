@@ -25,11 +25,7 @@ const GetApp = () => {
           <Col xs={12} sm={6}>
             <div className="getapp-block">
               <h3>Get the app now!</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua enim
-                ad minim veniam quis nostrud exercitation.
-              </p>
+              
               <div className="btn-block">
                 {/*<Link href="#">*/}
                 {/*  <a className="getapp-btn apl-btn">*/}

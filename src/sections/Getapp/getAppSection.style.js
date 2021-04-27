@@ -106,7 +106,7 @@ const GetAppSectionWrap = styled.div`
         &:hover{
             color: ${props => props.theme.primaryColor};
             background: ${props => props.theme.white};
-            border-color: transparent;
+            
             span,svg{
                 color: ${props => props.theme.primaryColor};
             }

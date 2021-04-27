@@ -14,17 +14,17 @@ const AboutClassic = () => {
   return (
     <AboutSectionWrapper >
       <Container>
-        <SectionTitle UniWidth="65%">
-          <h2 style={{marginBottom: 30}}>
-            <span>Crime at every corner.</span>
+        <SectionTitle UniWidth="100%">
+          <h2 style={{marginTop: 80, marginBottom: 80}}>
+            <span style={{fontWeight:600, fontSize: "120%"}}>The next generation watchman.</span>
           </h2>
         </SectionTitle>
-        <div style={{display: "flex", justifyContent: "center", paddingBottom: 120}}>
+        {/* <div style={{display: "flex", justifyContent: "center", paddingBottom: 120}}>
           Safety has become a major concern today. 
           The possibility that a person may have to face an emergency situation, even at their own homes, is increasing continuously. Considerable loss of health and property has to be born by innocent people and in many cases, it is just a matter of seconds between life and death. 
           Criminals are getting more and more expert at committing crimes and leaving no evidence; and there is no point in seeking legal help without evidence. 
           This makes deserving victims devoid of justice.
-        </div>
+        </div> */}
       </Container>
     </AboutSectionWrapper>
   );

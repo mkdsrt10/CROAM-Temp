@@ -12,6 +12,7 @@ import AppScreenThumb1 from "assets/images/classic/app-screen-thumb-1.png";
 import AppScreenThumb2 from "assets/images/classic/app-screen-thumb-2.png";
 import Pic1 from 'assets/images/classic/lk.png';
 import Pic2 from 'assets/images/classic/pap.png';
+import Pic3 from 'assets/images/classic/at.png';
 
 import TeamSectionWrapper from "./team.style";
 import CardExample from "../Team-cards";
@@ -34,18 +35,31 @@ const TeamSection = () => {
         </Row>
 
         <Row>
-          <Col sm={6}>
+          <Col sm={4}>
             <CardExample
               img={Pic1}
               title={"Dr. Lalan Kumar"}
-              text={"Assistant Professor, IIT Delhi"}
+              text={"Assistant Professor"}
+              dept={"Electrical Engineering"}
+              affiliation={"IIT Delhi"}
             />
           </Col>
-          <Col sm={6}>
+          <Col sm={4}>
             <CardExample
               img={Pic2}
               title={"Dr. Prathosh A P"}
-              text={"Assistant Professor, IIT Delhi"}
+              text={"Assistant Professor"}
+              dept={"Electrical Engineering"}
+              affiliation={"IIT Delhi"}
+            />
+          </Col>
+          <Col sm={4}>
+            <CardExample
+              img={Pic3}
+              title={"Ayush Tripathi"}
+              text={"Ph.D."}
+              dept={"Electrical Engineering"}
+              affiliation={"IIT Delhi"}
             />
           </Col>
         </Row>

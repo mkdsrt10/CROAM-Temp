@@ -11,9 +11,9 @@ import AppScreenImage from "assets/images/classic/app-screen.png";
 import AppScreenThumb1 from "assets/images/classic/app-screen-thumb-1.png";
 import AppScreenThumb2 from "assets/images/classic/app-screen-thumb-2.png";
 
-import BannerSectionWrapper from "./hero.style";
+import BannerSectionWrapper from "./herotwo.style";
 
-const Hero = () => {
+const Herotwo = () => {
     return (
         <BannerSectionWrapper id="banner">
             <Container>
@@ -21,11 +21,11 @@ const Hero = () => {
                     <Col sm={12}>
                         <SectionTitle
                             className="section-title"
-                            leftAlign={true}
+                            rightAlign={true}
                             UniWidth="100%"
                         >
                             <h1>
-                                <span>CRoam</span> ON
+                                <span>Crime</span> OFF
                             </h1>   
                         </SectionTitle>
                     </Col>
@@ -35,4 +35,4 @@ const Hero = () => {
     );
 };
 
-export default Hero;
+export default Herotwo;

@@ -29,6 +29,26 @@ const AppScreenSctionWrapper = styled.div`
     
   }
 
+  .slider-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    .slider-text {
+      box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+      padding: 20px 0 10px 0;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      color: white;
+      bottom: 0px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      font-size: 200%;
+    }
+  }
+
   .view-more-button {
     height: 100%;
     display: flex;

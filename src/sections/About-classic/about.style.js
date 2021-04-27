@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const AboutSectionWrapper = styled.div`
-    padding: 70px 0 0 0;
+    padding: 0px 0 0 0;
     .single-item{
         margin-bottom: 30px;
         .item-head{

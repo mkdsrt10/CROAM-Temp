@@ -3,15 +3,15 @@ import React from "react";
 import { Container, Row, Col } from "reusecore/Layout";
 import SectionTitle from "reusecore/SectionTitle";
 
-import Icon1 from "assets/images/classic/features/police-car.png";
-import Icon2 from "assets/images/classic/features/bullhorn.png";
-import Icon3 from "assets/images/classic/features/family.png";
+import Icon1 from "assets/images/classic/features/report.png";
+import Icon2 from "assets/images/classic/features/sos.png";
+import Icon3 from "assets/images/classic/features/inform.png";
 import Icon4 from "assets/images/classic/features/cctv.png";
-import Icon5 from "assets/images/classic/features/walkie-talkie.png";
+import Icon5 from "assets/images/classic/features/voice.png";
 import Icon6 from "assets/images/classic/features/robot.png";
-import Icon7 from "assets/images/classic/features/siren.png"
+import Icon7 from "assets/images/classic/features/rtreport.png"
 import Icon8 from "assets/images/classic/features/hammer.png";
-import Icon9 from "assets/images/classic/features/trainee.png";
+import Icon9 from "assets/images/classic/features/police.png";
 
 import FeturesSectionWrapper from "./fetures.style";
 import { height } from "styled-system";
@@ -28,7 +28,7 @@ const FeaturesClassic = () => {
         </SectionTitle>
 
         <Row>
-          <Col xs={12} sm={6} md={4}>
+          <Col xs={12} sm={6} >
             <div className="fetures-block">
               <div className="features-icon">
                 <img src={Icon2} alt="prime app features icon" />
@@ -39,7 +39,7 @@ const FeaturesClassic = () => {
               </p>
             </div>
           </Col>
-          <Col xs={12} sm={6} md={4}>
+          <Col xs={12} sm={6} >
             <div className="fetures-block">
               <div className="features-icon">
                 <img src={Icon5} alt="prime app features icon" />
@@ -50,7 +50,7 @@ const FeaturesClassic = () => {
               </p>
             </div>
           </Col>
-          <Col xs={12} sm={6} md={4}>
+          {/* <Col xs={12} sm={6} >
             <div className="fetures-block">
               <div className="features-icon">
                 <img src={Icon4} alt="prime app features icon" />
@@ -61,7 +61,7 @@ const FeaturesClassic = () => {
               </p>
             </div>
           </Col>
-          <Col xs={12} sm={6} md={4}>
+          <Col xs={12} sm={6} >
             <div className="fetures-block">
               <div className="features-icon">
                 <img src={Icon6} alt="prime app features icon" />
@@ -71,8 +71,8 @@ const FeaturesClassic = () => {
                 The degree of emergency is detected by analysing the captured images through state of the art Machine Learning techniques.
               </p>
             </div>
-          </Col>
-          <Col xs={12} sm={6} md={4}>
+          </Col> */}
+          <Col xs={12} sm={6} >
             <div className="fetures-block">
               <div className="features-icon">
                 <img src={Icon1} alt="prime app features icon" />
@@ -84,12 +84,12 @@ const FeaturesClassic = () => {
             </div>
           </Col>
 
-          <Col xs={12} sm={6} md={4}>
+          <Col xs={12} sm={6} >
             <div className="fetures-block">
               <div className="features-icon">
                 <img src={Icon3} alt="prime app features icon" />
               </div>
-              <h3>Keep family informed</h3>
+              <h3>Keep family/police informed</h3>
               <p>
                 Any incidents can be reported and your family members will be informed immediatedly.
               </p>

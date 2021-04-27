@@ -47,10 +47,12 @@ const FeturesSectionWrapper = styled.div`
 }
    
     .fetures-block{
-
+        text-align: center;
         .features-icon {
             position: relative;
-            display: inline-block;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
             padding: 15px; 
             border-radius: 5px;
             margin-bottom: 10px;
@@ -62,7 +64,7 @@ const FeturesSectionWrapper = styled.div`
                 height: 100%;
                 width: 100%;
                 border-radius: 5px;
-                background: #52DE97;
+                
                 content: " ";
                 opacity: 0.08;
             }
@@ -70,8 +72,8 @@ const FeturesSectionWrapper = styled.div`
             img {
                 display: block;
                 margin: 0;
-                height: 30px;
-                width: 30px;
+                height: 40%;
+                width: 40%;
             }
         }
         h3{
