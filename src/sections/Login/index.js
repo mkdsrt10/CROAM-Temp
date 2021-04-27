@@ -85,7 +85,6 @@ const Login = ({ admin }) => {
                     <FormStyled method="POST">
                       <div className="mb-7">
                         <Title className="mb-2">Sign In</Title>
-                        <Text>Enter your account details below</Text>
                       </div>
                       <Box mb={3}>
                         <Input
