@@ -16,7 +16,7 @@ import CardExample from "../About-cards";
 
 const Banner = () => {
   return (
-    <BannerSectionWrapper id="about">
+    <BannerSectionWrapper>
       <Container>
            
         <Row>

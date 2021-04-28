@@ -11,7 +11,7 @@ const AppScreenSctionWrapper = styled.div`
     position: absolute;
     width: 500%;
     height: 40%;
-    top: 30%;
+    top: 20%;
     left: -10%;
     z-index: -1;
     background:  #e6e6f5 no-repeat;
@@ -21,13 +21,16 @@ const AppScreenSctionWrapper = styled.div`
     }
     box-shadow: 0px 10px 10px  rgba(0, 0, 0, 0.2), 0px -5px 10px  rgba(0, 0, 0, 0.2);
 
-  .heading {
-    font-size: 3.7vw; 
-    display: flex; 
-    justify-content: center; 
-    color: #1d316c;
-    
-  }
+    .section-title {
+      h1 {
+        font-weight: 300;
+        font-size: 55px;
+        line-height: 75px;
+        span{
+          font-weight: 600;
+        }
+      }
+    }
 
   .slider-item {
     position: relative;
@@ -121,6 +124,38 @@ const AppScreenSctionWrapper = styled.div`
     right: 92%;
   }
   @media only screen and (max-width: 912px) {
+    .section-title {
+      margin-bottom: 18px;
+      width: 100%;
+      h1 {
+        font-weight: 300;
+        font-size: 45px;
+        line-height: 75px;
+        margin: 0 0 0 35px;
+        span{
+          font-weight: 600;
+        }
+      }
+      h4 {
+        margin-bottom: 8px;
+      }
+    }
+    .slider-item{
+      .slider-text {
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+        padding: 10px 0 0 0;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        color: white;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        font-size: 100%;
+      }
+    }
     &:before{
       content: "";
       position: absolute;
@@ -148,6 +183,13 @@ const AppScreenSctionWrapper = styled.div`
     }
   }
   @media only screen and (max-width: 568px) {
+    .section-title {
+      h1 {
+          font-size: 36px;
+          line-height: 50px;
+        margin: 0 0 0 20px;
+      }
+    }
     &:before{
       content: "";
       position: absolute;
@@ -175,11 +217,34 @@ const AppScreenSctionWrapper = styled.div`
       display: none;
     }
     .slick-slide {
-      margin: 50px 0 0 0;
+      margin: 10px 0 0 0;
     }
   }
   @media only screen and (max-width: 480px) {
     padding: 40px 0 0 0;
+    .slider-item{
+      .slider-text {
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+        padding: 0 0 0 0;
+        display: none;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        color: white;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        font-size: 50%;
+      }
+    }
+    .section-title {
+      h1 {
+        font-size: 36px;
+        line-height: 50px;
+        margin: 0 0 0 30px;
+      }
+    }
     .slick-slide[data-index~='-2']{
       margin-left: 0;
     }
@@ -191,7 +256,7 @@ const AppScreenSctionWrapper = styled.div`
       margin-right: 0;
     }
     .slick-slide{
-      margin: 40px 0 0 0;
+      margin: 10px 0 0 0;
       &.slick-active{
         transform: scale(1);
       }

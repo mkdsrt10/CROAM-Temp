@@ -81,13 +81,17 @@ const AppScreensClassic = () => {
   return (
     <AppScreenSctionWrapper>
       <Container>
-        {/* <Row>
-          <Col xs={12}>
-            <div className="heading">
-              Everyone is affected by crime.
-            </div>
-          </Col>
-        </Row> */}
+        <Row>
+        <SectionTitle
+          className="section-title"
+          leftAlign={true}
+          UniWidth="100%"
+        >
+          <h1>
+            <span>Crime</span> OFF
+          </h1>   
+        </SectionTitle>
+        </Row>
         <Row>
           <Col xs={12}>
             <SlickSlider {...settings}>

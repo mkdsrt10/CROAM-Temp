@@ -39,7 +39,7 @@ const Navigation = () => {
         <div className="navbar-wrap">
           <Link href="/">
             <a className="logo">
-              <img src={logoSrc}
+              <img src={logo1}
                 alt="prime app landing" />
             </a>
           </Link>

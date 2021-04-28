@@ -32,9 +32,8 @@ const Home = () => (
       <GlobalStyle />
       <Navigation />
       <Hero />
-      <AboutClassic />
-      <Herotwo />
-      <Banner />
+      {/* <AboutClassic />
+      <Herotwo /> */}
       <AppScreens />
       <BannerModern />
       <FeaturesClassic />
@@ -43,6 +42,7 @@ const Home = () => (
       <Getapp />
       {/*<News />*/}
       {/*<Client />*/}
+      <Banner />
       <TeamSection />
       <Contact />
       <Footer />

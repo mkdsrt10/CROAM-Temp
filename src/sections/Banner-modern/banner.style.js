@@ -105,8 +105,7 @@ const BannerSectionWrapper = styled.div`
   }
   @media only screen and (max-width: 912px) {
     margin: 30px 0 0 0;
-    padding-top: 120px;
-    background: none;
+    padding: 120px 0;
     .section-title {
       margin-bottom: 18px;
       width: 100%;
@@ -146,7 +145,7 @@ const BannerSectionWrapper = styled.div`
     }
   }
   @media only screen and (max-width: 760px) {
-    padding: 100px 0 0 20px;
+    padding: 100px 0px;
 
     .banner-btn + .banner-btn {
       margin-left: 30px;

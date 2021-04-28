@@ -23,7 +23,7 @@ const FeaturesClassic = () => {
       <Container>
         <SectionTitle UniWidth="65%">
           <h2>
-            What <span>CROAM </span> can do.
+            <span>Features</span>
           </h2>
         </SectionTitle>
 
@@ -103,11 +103,11 @@ const FeaturesClassic = () => {
       <Container>
         <SectionTitle UniWidth="65%">
           <h2>
-            Why <span>Police</span> need <span>CROAM</span>.
+            <span>Smart Police</span>
           </h2>
         </SectionTitle>
         <Row>
-          <Col xs={12} sm={6} md={4}>
+          <Col xs={12} sm={4} md={4}>
             <div className="fetures-block">
               <div className="features-icon">
                 <img src={Icon7} alt="prime app features icon" />
@@ -118,7 +118,7 @@ const FeaturesClassic = () => {
               </p>
             </div>
           </Col>
-          <Col xs={12} sm={6} md={4}>
+          <Col xs={12} sm={4} md={4}>
             <div className="fetures-block">
               <div className="features-icon">
                 <img src={Icon8} alt="prime app features icon" />
@@ -129,7 +129,7 @@ const FeaturesClassic = () => {
               </p>
             </div>
           </Col>
-          <Col xs={12} sm={6} md={4}>
+          <Col xs={12} sm={4} md={4}>
             <div className="fetures-block">
               <div className="features-icon">
                 <img src={Icon9} alt="prime app features icon" />
