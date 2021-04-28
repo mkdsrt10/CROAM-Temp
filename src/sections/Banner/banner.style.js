@@ -4,12 +4,19 @@ import imgHero from "assets/images/classic/hero-bg.png";
 
 const BannerSectionWrapper = styled.div`
   /* color: #1D316C; */
-  padding-top: 190px;
+  padding-top: 50px;
   background: url(${imgHero}) no-repeat;
   background-size: 45% 100%;
   background-position: center right;
+
+  .card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   p {
-    margin: 0 0 75px 0;
+    margin: 0 0 60px 0;
   }
   .section-title {
     h4 {
@@ -26,11 +33,13 @@ const BannerSectionWrapper = styled.div`
         line-height: 100%;
       }
     }
-    h1 {
+    h1, h2 {
+      display: flex;
+      justify-content: center;
       font-weight: 300;
-      font-size: 60px;
+      font-size: 4vw;
       line-height: 75px;
-      margin: 0 0 38px 0;
+      margin: 28px 0 38px 0;
       span{
         font-weight: 600;
       }
@@ -137,7 +146,7 @@ const BannerSectionWrapper = styled.div`
     }
   }
   @media only screen and (max-width: 760px) {
-    padding: 100px 0 0 0;
+    padding: 100px 0 0 20px;
 
     .banner-btn + .banner-btn {
       margin-left: 30px;
@@ -154,7 +163,6 @@ const BannerSectionWrapper = styled.div`
   }
 
   @media only screen and (max-width: 480px) {
-    padding: 120px 0 0px 0;
     .section-title {
       h1 {
         font-size: 35px;

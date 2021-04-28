@@ -37,82 +37,82 @@ const AForgot = styled.a`
 `;
 
 const SignUp = () => {
-    return (
-        <>
-            <PageWrapper>
-                <BoxStyled bg="#f7f8fa">
-                    <BoxInner>
-                        <Container className="text-center">
-                            <Box my="150px" mx="auto">
-                                <Row className="justify-content-center">
-                                    <Col lg="7" xl="6">
-                                        <FormStyled>
-                                            <div className="mb-5">
-                                                <Title className="mb-2">Sign Up</Title>
-
-                                            </div>
-                                            <Box mb={3}>
-                                                <Input type="name" placeholder="Name" />
-                                            </Box>
-                                            <Box mb={3}>
-                                                <Input type="email" placeholder="E-mail" />
-                                            </Box>
-                                            <Box mb={3}>
-                                                <Input type="tel" placeholder="Mobile number" />
-                                            </Box>
-                                            <Box mb={3}>
-                                                <Input type="text" placeholder="Location" />
-                                            </Box>
-                                            <Box mb={4}>
-                                                <Input type="number" placeholder="PIN code" />
-                                            </Box>
-                                            <label for="EC Info">Emergency Contact Information: </label>
-                                            <Box mt={3} mb={3}>
-                                                <Input type = "name" placeholder="Name 1"></Input>
-                                            </Box>
-                                            <Box mb={3}>
-                                                <Input type = "tel" placeholder="Phone no. 1"></Input>
-                                            </Box>
-                                            <Box mb={3}>
-                                                <Input type = "text" placeholder="Relation 1"></Input>
-                                            </Box>
-                                            <Box mb={3}>
-                                                <Input type = "name" placeholder="Name 2"></Input>
-                                            </Box>
-                                            <Box mb={3}>
-                                                <Input type = "tel" placeholder="Phone no. 2"></Input>
-                                            </Box>
-                                            <Box mb={3}>
-                                                <Input type = "text" placeholder="Relation 2"></Input>
-                                            </Box>
-                                            <Box mb={3} className="text-left">
-                                                <Checkbox>
-                                                    I agree to the{" "}
-                                                    <Link href="/">
-                                                        <AForgot>Terms & Condition</AForgot>
-                                                    </Link>
-                                                </Checkbox>
-                                            </Box>
-                                            <Link href = "/blog-grid">
-                                                <Button width="100%" type="submit" borderRadius={10}>
-                                                    Get Started
-                                                </Button>
-                                            </Link>
-                                            <Box mt={3}>
-                                                Already have an account?{" "}
-                                                <Link href="/login">
-                                                    <a>Login.</a>
-                                                </Link>
-                                            </Box>
-                                        </FormStyled>
-                                    </Col>
-                                </Row>
-                            </Box>
-                        </Container>
-                    </BoxInner>
-                </BoxStyled>
-            </PageWrapper>
-        </>
-    );
+  return (
+    <>
+      <PageWrapper>
+        <BoxStyled bg="#f7f8fa">
+          <BoxInner>
+            <Container className="text-center">
+              <Box my="150px" mx="auto">
+                <Row className="justify-content-center">
+                  <Col lg="7" xl="6">
+                    <FormStyled>
+                      <div className="mb-5">
+                        <Title className="mb-2">Sign Up</Title>
+                        
+                      </div>
+                      <Box mb={3}>
+                        <Input type="name" placeholder="Name" />
+                      </Box>
+                      <Box mb={3}>
+                        <Input type="email" placeholder="E-mail" />
+                      </Box>
+                      <Box mb={3}>
+                        <Input type="tel" placeholder="Mobile number" />
+                      </Box>
+                      <Box mb={3}>
+                        <Input type="text" placeholder="Location" />
+                      </Box>
+                      <Box mb={4}>
+                        <Input type="number" placeholder="PIN code" />
+                      </Box>
+                      <label for="EC Info">Emergency Contact Information: </label>
+                      <Box mt={3} mb={3}>
+                          <Input type = "name" placeholder="Name 1"></Input>
+                      </Box>
+                      <Box mb={3}>
+                          <Input type = "tel" placeholder="Phone no. 1"></Input>
+                      </Box>
+                      <Box mb={3}>
+                          <Input type = "text" placeholder="Relation 1"></Input>
+                      </Box>
+                      <Box mb={3}>
+                          <Input type = "name" placeholder="Name 2"></Input>
+                      </Box>
+                      <Box mb={3}>
+                          <Input type = "tel" placeholder="Phone no. 2"></Input>
+                      </Box>
+                      <Box mb={3}>
+                          <Input type = "text" placeholder="Relation 2"></Input>
+                      </Box>
+                      <Box mb={3} className="text-left">
+                        <Checkbox>
+                          I agree to the{" "}
+                          <Link href="/">
+                            <AForgot>Terms & Condition</AForgot>
+                          </Link>
+                        </Checkbox>
+                      </Box>
+                    <Link href = "/blog-grid">
+                      <Button width="100%" type="submit" borderRadius={10}>
+                        Get Started
+                      </Button>
+                    </Link>
+                      <Box mt={3}>
+                        Already have an account?{" "}
+                        <Link href="/login">
+                          <a>Login.</a>
+                        </Link>
+                      </Box>
+                    </FormStyled>
+                  </Col>
+                </Row>
+              </Box>
+            </Container>
+          </BoxInner>
+        </BoxStyled>
+      </PageWrapper>
+    </>
+  );
 };
 export default SignUp;

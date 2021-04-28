@@ -19,28 +19,31 @@ import News from "sections/News";
 import Getapp from "sections/Getapp";
 import Client from "sections/Client";
 import Footer from "sections/Footer-classic";
-import Contact from "sections/Contact"
+import Contact from "sections/Contact";
+import Hero from "sections/Hero";
+import TeamSection from "../src/sections/Team";
 
 import { GlobalStyle } from "sections/app.style";
 import theme from "theme/classic/themeStyles";
+
 
 const Home = () => (
   <ThemeProvider theme={theme}>
     <Main title="CRoam">
       <GlobalStyle />
       <Navigation />
-
-      <Banner />
-      <AppScreens />
+      <Hero />
       <AboutClassic />
+      <AppScreens />
+      <Banner />
       <FeaturesClassic />
-      <FeaturesClassic2 />
-      {/*<Testimonial />*/}
+      {/* <Testimonial /> */}
       {/*<Counter />*/}
       <Getapp />
       <FeaturesClassicteam/>
       {/*<News />*/}
       {/*<Client />*/}
+      <TeamSection />
       <Contact />
       <Footer />
     </Main>

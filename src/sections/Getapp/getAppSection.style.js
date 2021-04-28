@@ -1,14 +1,17 @@
 import styled from 'styled-components';
 
 import AppSecreenBG from 'assets/images/app/get-app/get-app-bg.png';
+import imgHero from "assets/images/classic/hero-bg.png";
 
 const GetAppSectionWrap = styled.div`
-    padding: 100px 0 90px 0;
-    background: url(${AppSecreenBG});
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
+    padding: 30px;
+    margin-bottom: 5vh;
+    background: url(${imgHero}) no-repeat;
+    background-size: 45% 100%;
+    background-position: center right;
     position: relative;
+    overflow: hidden;   
+
     .section__particle{
         position: absolute;
         &.one{
@@ -24,15 +27,41 @@ const GetAppSectionWrap = styled.div`
         }
         &.three{
             width: 114px;
-            top: 200px;
-            right: 17%;
-                }
+            top: -10%;
+            right: 28%;
+            }
         &.four{
             width: 95px;
             bottom: 80px;
             right: 25%;
         }
     }
+    .app-screen-image-wrapper {
+        position: relative;
+        width: 40%;
+        margin: 0 0 0 auto;
+        .thumb {
+          position: absolute;
+          box-shadow: 0 0 40px ${props => props.theme.shadowColor};
+          border-radius: 10px;
+    
+          img { 
+            height: 100%;
+          }
+    
+          &.one {
+            bottom: 3%;
+            left: -20%;
+            height: 50%;
+          }
+    
+          &.two {
+            top: 3%;
+            right: -18%;
+            height: 28%;
+          }
+        }
+      }
     .getapp-block{
         h3{
             font-size: 40px;
@@ -108,7 +137,16 @@ const GetAppSectionWrap = styled.div`
         }
     }
     @media only screen and (max-width: 1280px) {
-        background-size: cover;
+        background-size: 45% 100%;
+    background-position: center right;
+      
+        .app-screen-image-wrapper {
+            .thumb {
+              &.one {
+                left: -15%;
+              }
+            }
+        }
         .getapp-btn{
             min-width: auto;
             width: 48%;
@@ -120,13 +158,18 @@ const GetAppSectionWrap = styled.div`
             }
         }
         .section__particle{
+            &.three{
+                display: none;
+            }
             &.four{
                 display: none;
             }
         }
     }
     @media only screen and (max-width: 912px) {
-        background-size: cover;
+        background-size: 45% 100%;
+        background-position: center right;
+        
         .getapp-block{
             h3{
                 font-size: 30px;
@@ -151,7 +194,9 @@ const GetAppSectionWrap = styled.div`
         }
     }
     @media only screen and (max-width: 760px) {
-        padding: 100px 0 50px 0;
+        .app-screen-image-wrapper {
+            margin-right: 20px;
+        }
         .section__particle{
             &.two{
                 bottom: auto;
@@ -174,8 +219,12 @@ const GetAppSectionWrap = styled.div`
         }  
     }
     
-    @media only screen and (max-width: 568px) {
+    @media only screen and (max-width: 580px) {
+        background: none;
         text-align: center;
+        .app-screen-image-wrapper {
+            display: none;
+        }
         .getapp-block {
             .btn-block{
                 display: flex;

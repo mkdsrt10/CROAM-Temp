@@ -2,6 +2,49 @@ import styled from 'styled-components';
 
 const FeturesSectionWrapper = styled.div`
    padding: 70px 0 10px 0;
+    
+   .top-shadow-left {
+    display: inline-block;
+       width: 50%;
+       height: 20px;
+       
+       -ms-transform: skewY(-5deg); /* IE 9 */
+        transform: skewY(-5deg);
+        margin: 50px 0 50px 0;
+        box-shadow: -3px -10px 10px rgba(0, 0, 0, 0.2);
+        -webkit-backface-visibility: hidden;
+   }
+   .top-shadow-right {
+    display: inline-block;
+    width: 50%;
+    height: 20px;
+    -ms-transform: skewY(5deg); /* IE 9 */
+    transform: skewY(5deg);
+    margin: 50px 0 50px 0;
+    box-shadow: 3px -10px 10px rgba(0, 0, 0, 0.2);
+    -webkit-backface-visibility: hidden;
+}
+.bottom-shadow-left {
+    display: inline-block;
+       width: 50%;
+       height: 20px;
+       
+       -ms-transform: skewY(5deg); /* IE 9 */
+        transform: skewY(5deg);
+        margin: 50px 0 50px 0;
+        box-shadow: -3px 10px 10px rgba(0, 0, 0, 0.2);
+        -webkit-backface-visibility: hidden;
+   }
+   .bottom-shadow-right {
+    display: inline-block;
+    width: 50%;
+    height: 20px;
+    -ms-transform: skewY(-5deg); /* IE 9 */
+    transform: skewY(-5deg);
+    margin: 50px 0 50px 0;
+    box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.2);
+    -webkit-backface-visibility: hidden;
+}
    
     .fetures-block{
 

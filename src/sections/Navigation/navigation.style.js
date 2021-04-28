@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const NavigationWrap =  styled.header`
+const NavigationWrap = styled.header`
     background: transparent;
     position: fixed;
     width: 100%;
@@ -21,20 +21,19 @@ const NavigationWrap =  styled.header`
 
   /*Drop down style*/ 
   .dropdown{
-    background: #fff;
+    background: transparent;
     visibility: hidden;
     opacity: 0;
     min-width: 200px;
-    border: 1px solid #f5f5f5;
     position: absolute;
     margin-top: 1rem;
-    left: 20px;
-    padding: 15px 0px;
+    left: 10px;
+    padding: 0px 0px;
     display: none;
-    box-shadow: 0px 30px 70px 0px rgba(137,139,142,0.15);
+    box-shadow: 0px 30px 70px 0px rgba(137,139,142,0.2);
     -webkit-transform: translateY(20px);
     -ms-transform: translateY(20px);
-    transform: translateY(20px);
+    transform: transalteX(-10px) translateY(20px);
     transition: all 0.3s ease-in-out;
   }
   ul li:hover > ul,
@@ -56,16 +55,16 @@ const NavigationWrap =  styled.header`
     }
     li{
         position: relative;
-        padding: 48px 0px 48px 40px;
+        padding: 15px 25px;
         .dropdown{
           li{
             padding: 0;
             a{
-              color: #1D316C;
+              color: white;
               display: block;
               padding: 5px 15px;
               &:hover{
-                color: ${props => props.theme.menuHoverColor ? props.theme.menuHoverColor : '#FB7B81'} !important;
+                color: ${props => props.theme.menuHoverColor ? props.theme.menuHoverColor : '#FB7B81'};
               }
               &:before{
                 content: none;
@@ -76,10 +75,10 @@ const NavigationWrap =  styled.header`
       
       a, .nav-active{
         position: relative;
-        color: ${props => props.theme.menuColor ? props.theme.menuColor : '#1D316C'};
+        color: white;
         font-size: 15px;
         transition: 450ms all;
-        padding-bottom: 5px;
+        padding-bottom: 0px;
         cursor: pointer;
         &:before{
           content: '';
@@ -102,21 +101,22 @@ const NavigationWrap =  styled.header`
     }
   }
   .logo{
-    margin-top: 8px;
+    margin-top: 7px;
+    margin-bottom: 5px;
     transition: all 0.8s cubic-bezier(0.3, 0.8, 0.2, 1) 0s;
     img{
-      width: 70px;
+      width: 60px;
     }
   }
   &.scrolled{
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 30px;
     background: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px;
     .logo{
-        width: 100px;
+        width: 60px;
     } 
     .nav{
       li{
-        padding: 28px 0px 28px 40px;
+        padding: 15px 25px;
         a{
           color: #1D316C;
           &:hover{
@@ -127,6 +127,7 @@ const NavigationWrap =  styled.header`
       li{
         .dropdown{
           li{
+            background: white;
             padding: 0;
           }
         }
@@ -138,10 +139,11 @@ const NavigationWrap =  styled.header`
   @media only screen and (max-width: 912px) {
     height: auto;
     min-height: 50px;
-    padding: 15px 20px;
+    padding: 0px 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px;
     background: #fff;
     &.scrolled{
-        padding: 8px 20px;
+        padding: 3px 20px;
         .nav .collapsed {
           li{
             padding: 0;
@@ -175,7 +177,7 @@ const NavigationWrap =  styled.header`
         position: relative;
     }
     .logo {
-      width: 100%;
+      width: 60px;
       display: block;
       margin: 7px 0 0 0;
       img{width: 110px;}
@@ -183,7 +185,7 @@ const NavigationWrap =  styled.header`
     .mobile-menu-icon {
       display: inline-block;
       position: absolute;
-      top: 8px;
+      top: 20px;
       right: 3px;
       cursor: pointer;
     }

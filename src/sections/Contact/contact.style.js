@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const ContactWrapper = styled.div`
     
-    padding: 100px 0 200px 0;
+    margin: 100px 0 100px 0;
     overflow: hidden;
     align-items: center;
     form{

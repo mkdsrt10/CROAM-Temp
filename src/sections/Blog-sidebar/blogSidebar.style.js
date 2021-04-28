@@ -2,6 +2,24 @@ import styled from 'styled-components';
 
 
 const BlogSideBarWrapper = styled.div`
+        .dropdown {
+            margin: 5px 0px;
+            position: relative;
+            display: flex;
+            .input{
+                display: flex;
+                width: 100%;
+                flex-basis: 100%;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid ${props => props.theme.headingColor ? props.theme.headingColor : "#1D316C"};
+
+                &:focus{
+                    border-color: ${props => props.theme.primaryColor ? props.theme.primaryColor : "#8A57DE"};
+                }
+            }
+        }
+
         .search-box {
             position: relative;
             display: flex;
