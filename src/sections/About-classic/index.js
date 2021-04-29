@@ -14,21 +14,11 @@ const AboutClassic = () => {
   return (
     <AboutSectionWrapper >
       <Container>
-        <SectionTitle UniWidth="65%">
-          <h2 style={{marginBottom: 30}}>
-            <span>Crime at every corner.</span>
+        <SectionTitle UniWidth="100%">
+          <h2 style={{marginTop: 80, marginBottom: 80}}>
+            <span style={{fontWeight:600, fontSize: "120%"}}>The next generation watchman.</span>
           </h2>
         </SectionTitle>
-<<<<<<< HEAD
-        CRoam is a smart wearable based safety system designed for the safety of an individuals. Running in the background, the system responses to the instinct of a person in emergency instantly without actually activating it when in the need. A sequence of action is initiated which attempt to protect the user against a potential hazard.
-=======
-        <div style={{display: "flex", justifyContent: "center", paddingBottom: 120}}>
-          Safety has become a major concern today. 
-          The possibility that a person may have to face an emergency situation, even at their own homes, is increasing continuously. Considerable loss of health and property has to be born by innocent people and in many cases, it is just a matter of seconds between life and death. 
-          Criminals are getting more and more expert at committing crimes and leaving no evidence; and there is no point in seeking legal help without evidence. 
-          This makes deserving victims devoid of justice.
-        </div>
->>>>>>> 270e7b06764be828430352bd49d8fa1ae4492f21
       </Container>
     </AboutSectionWrapper>
   );

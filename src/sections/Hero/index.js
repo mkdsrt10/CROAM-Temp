@@ -26,8 +26,6 @@ const Hero = () => {
                         >
                             <h1>
                                 <span>CRoam</span> ON
-                                <br></br>
-                                Crime OFF
                             </h1>   
                         </SectionTitle>
                     </Col>

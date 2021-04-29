@@ -10,14 +10,14 @@ import Footer from "sections/Footer-classic";
 import { GlobalStyle } from "sections/app.style";
 import theme from "../src/reusecore/utils/theme";
 
-const Home = () =>
+const Home = ({setUser, setToken}) =>
 {
 
     return (
         <ThemeProvider theme={theme}>
             <Main title="Appion React Gatsby nextjs landing">
                 <GlobalStyle />
-                <Login admin={false}/>
+                <Login setUser={setUser} setToken={setToken} admin={false}/>
                 <Footer />
             </Main>
         </ThemeProvider>

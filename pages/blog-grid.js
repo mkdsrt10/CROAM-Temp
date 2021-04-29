@@ -10,12 +10,12 @@ import Footer from "sections/Footer-classic";
 import { GlobalStyle } from "sections/app.style";
 import theme from "theme/blog/themeStyles";
 
-const Home = () => (
+const Home = ({user, token, type}) => (
   <ThemeProvider theme={theme}>
     <Main title="Appion React Gatsby nextjs landing">
       <GlobalStyle />
-      <Navigation admin={false} />
-      <BlogPage admin={false} />
+      <Navigation admin={type==="Police"} />
+      <BlogPage user={user} token={token} admin={type==="Police"} />
       <Footer />
     </Main>
   </ThemeProvider>

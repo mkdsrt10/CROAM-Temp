@@ -7,13 +7,13 @@ import { SlickSlider, SliderItem } from "reusecore/SlickSlider";
 
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 
-import screen1 from "assets/images/classic/screens/screens-1.png";
-import screen2 from "assets/images/classic/screens/screens-2.png";
-import screen3 from "assets/images/classic/screens/screens-3.png";
-import screen4 from "assets/images/classic/screens/screens-4.png";
-import screen5 from "assets/images/classic/screens/screens-5.png";
-import screen6 from "assets/images/classic/screens/screens-6.png";
-import screen7 from "assets/images/classic/screens/screens-7.png";
+import screen1 from "assets/images/classic/screens/news1.png";
+import screen2 from "assets/images/classic/screens/news2.png";
+import screen3 from "assets/images/classic/screens/news3.png";
+import screen4 from "assets/images/classic/screens/news4.png";
+import screen5 from "assets/images/classic/screens/news5.png";
+import screen6 from "assets/images/classic/screens/news6.png";
+import screen7 from "assets/images/classic/screens/news7.png";
 import screen8 from "assets/images/classic/screens/screens-8.png";
 import screen9 from "assets/images/classic/screens/screens-9.png";
 import screen10 from "assets/images/classic/screens/screens-10.png";
@@ -76,71 +76,94 @@ const AppScreensClassic = () => {
       },
     ],
     nextArrow: <ArrowRight />,
-    prevArrow: <ArrowLeft />,
+    prevArrow: <ArrowLeft />
   };
   return (
     <AppScreenSctionWrapper>
       <Container>
-<<<<<<< HEAD
         <Row>
-          <Col xs={12} sm={12}>
-            <SectionTitle
-              className="section-title-block"
-              leftAlign={true}
-              UniWidth="100%"
-              mb={50}
-            >
-              <h2>
-                <span>Everyone is effected by Crime. </span>
-              </h2>
-            </SectionTitle>
-=======
-        {/* <Row>
-          <Col xs={12}>
-            <div className="heading">
-              Everyone is affected by crime.
-            </div>
->>>>>>> 270e7b06764be828430352bd49d8fa1ae4492f21
-          </Col>
-        </Row> */}
+        <SectionTitle
+          className="section-title"
+          leftAlign={true}
+          UniWidth="100%"
+        >
+          <h1>
+            <span>Crime</span> OFF
+          </h1>   
+        </SectionTitle>
+        </Row>
         <Row>
           <Col xs={12}>
             <SlickSlider {...settings}>
               <SliderItem key={"1"}>
-                <img src={screen1} alt="img" width="100%" />
+                <div className="slider-item">
+                  <img src={screen1} alt="img" width="100%" />
+                  <div className = "slider-text">                  
+                    <p>
+                      CRoam, the next generation watchman.  
+                    </p>
+                  </div>
+                </div>
               </SliderItem>
-              <SliderItem key={"1"}>
-                <img src={screen2} alt="img" width="100%" />
+              <SliderItem key={"2"}>
+              <div className="slider-item">
+                  <img src={screen2} alt="img" width="100%" />
+                  <div className = "slider-text">                  
+                    <p>
+                      With CRoam, you are never alone.
+                    </p>
+                  </div>
+                </div>
               </SliderItem>
-              <SliderItem key={"1"}>
-                <img src={screen3} alt="img" width="100%" />
+              <SliderItem key={"3"}>
+              <div className="slider-item">
+                  <img src={screen3} alt="img" width="100%" />
+                  <div className = "slider-text">                  
+                    <p>
+                      Alert! CRoam is watching you...
+                    </p>
+                  </div>
+                </div>
               </SliderItem>
-              <SliderItem key={"1"}>
-                <img src={screen4} alt="img" width="100%" />
+              <SliderItem key={"4"}>
+              <div className="slider-item">
+                  <img src={screen4} alt="img" width="100%" />
+                  <div className = "slider-text">                  
+                    <p>
+                      With CRoam, carry CCTV on your wrist.  
+                    </p>
+                  </div>
+                </div>
               </SliderItem>
-              <SliderItem key={"1"}>
-                <img src={screen5} alt="img" width="100%" />
+              <SliderItem key={"5"}>
+              <div className="slider-item">
+                  <img src={screen5} alt="img" width="100%" />
+                  <div className = "slider-text">                  
+                    <p>
+                      Police will reach you before you reach police.
+                    </p>
+                  </div>
+                </div>
               </SliderItem>
-              <SliderItem key={"1"}>
-                <img src={screen6} alt="img" width="100%" />
+              <SliderItem key={"6"}>
+              <div className="slider-item">
+                  <img src={screen6} alt="img" width="100%" />
+                  <div className = "slider-text">                  
+                    <p>
+                      With CRoam, help will be right there. 
+                    </p>
+                  </div>
+                </div>
               </SliderItem>
-              <SliderItem key={"1"}>
-                <img src={screen7} alt="img" width="100%" />
-              </SliderItem>
-              <SliderItem key={"1"}>
-                <img src={screen8} alt="img" width="100%" />
-              </SliderItem>
-              <SliderItem key={"1"}>
-                <img src={screen9} alt="img" width="100%" />
-              </SliderItem>
-              <SliderItem key={"1"}>
-                <img src={screen10} alt="img" width="100%" />
-              </SliderItem>
-              <SliderItem key={"1"}>
-                <img src={screen12} alt="img" width="100%" />
-              </SliderItem>
-              <SliderItem key={"1"}>
-                <img src={screen13} alt="img" width="100%" />
+              <SliderItem key={"7"}>
+              <div className="slider-item">
+                  <img src={screen7} alt="img" width="100%" />
+                  <div className = "slider-text">                  
+                    <p>
+                      Roam carefree with CRoam. 
+                    </p>
+                  </div>
+                </div>
               </SliderItem>
             </SlickSlider>
           </Col>

@@ -13,7 +13,7 @@ import FaqClassic from "sections/Faq-Classic";
 import Integrations from "sections/Integrations";
 import AppScreens from "sections/AppScreens-classic";
 import Counter from "sections/Counters";
-import Pricing from "sections/Pricing";
+import BannerModern from "sections/Banner-modern"
 import Testimonial from "sections/Testimonial";
 import News from "sections/News";
 import Getapp from "sections/Getapp";
@@ -21,6 +21,7 @@ import Client from "sections/Client";
 import Footer from "sections/Footer-classic";
 import Contact from "sections/Contact";
 import Hero from "sections/Hero";
+import Herotwo from "sections/Herotwo";
 import TeamSection from "../src/sections/Team";
 
 import { GlobalStyle } from "sections/app.style";
@@ -33,9 +34,10 @@ const Home = () => (
       <GlobalStyle />
       <Navigation />
       <Hero />
-      <AboutClassic />
+      {/* <AboutClassic />
+      <Herotwo /> */}
       <AppScreens />
-      <Banner />
+      <BannerModern />
       <FeaturesClassic />
       {/* <Testimonial /> */}
       {/*<Counter />*/}
@@ -43,6 +45,7 @@ const Home = () => (
       <FeaturesClassicteam/>
       {/*<News />*/}
       {/*<Client />*/}
+      <Banner />
       <TeamSection />
       <Contact />
       <Footer />

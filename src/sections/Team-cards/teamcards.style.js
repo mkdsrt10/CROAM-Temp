@@ -8,7 +8,7 @@ const TeamCardsSectionWrapper = styled.div`
   opacity: 1;
   border-radius: 10px;
   text-align: center;
-  border-width: 0 0 1px 0.2px;
+  border-width: 0 0 0px 0.2px;
   border-color: silver;
   border-style: solid;
     

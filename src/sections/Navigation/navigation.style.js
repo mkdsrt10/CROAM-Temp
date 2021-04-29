@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const NavigationWrap = styled.header`
-    background: transparent;
+    background: white;
     position: fixed;
     width: 100%;
     z-index: 9999;
@@ -60,7 +60,7 @@ const NavigationWrap = styled.header`
           li{
             padding: 0;
             a{
-              color: white;
+              //color: white;
               display: block;
               padding: 5px 15px;
               &:hover{
@@ -75,7 +75,7 @@ const NavigationWrap = styled.header`
       
       a, .nav-active{
         position: relative;
-        color: white;
+        //color: white;
         font-size: 15px;
         transition: 450ms all;
         padding-bottom: 0px;
@@ -101,18 +101,18 @@ const NavigationWrap = styled.header`
     }
   }
   .logo{
-    margin-top: 7px;
+    margin-top: 10px;
     margin-bottom: 5px;
     transition: all 0.8s cubic-bezier(0.3, 0.8, 0.2, 1) 0s;
     img{
-      width: 60px;
+      width: 120px;
     }
   }
   &.scrolled{
     background: white;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px;
     .logo{
-        width: 60px;
+        width: 120px;
     } 
     .nav{
       li{
@@ -155,7 +155,10 @@ const NavigationWrap = styled.header`
           li+li{
             padding-left: 0;
           }
-        } 
+        }
+        .logo{
+          width: 80px;
+        }
     }
     .has-dropdown{
       a{
@@ -177,15 +180,15 @@ const NavigationWrap = styled.header`
         position: relative;
     }
     .logo {
-      width: 60px;
+      width: 80px;
       display: block;
-      margin: 7px 0 0 0;
-      img{width: 110px;}
+      margin: 10px 0 0 0;
+      img{width: 120px;}
     }
     .mobile-menu-icon {
       display: inline-block;
       position: absolute;
-      top: 20px;
+      top: 0px;
       right: 3px;
       cursor: pointer;
     }

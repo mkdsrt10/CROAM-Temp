@@ -4,55 +4,52 @@ import { Container, Row, Col } from "reusecore/Layout";
 import SectionTitle from "reusecore/SectionTitle";
 import Button from "reusecore/Button";
 import VintageBox from "reusecore/VintageBox";
-import Particle from "reusecore/Particle";
 
 import { FaPlay, FaDownload } from "react-icons/fa";
 
+import AppScreens from "../AppScreens-classic";
+import mission from 'assets/images/classic/about/target.296fdb53.svg';
+import vision from 'assets/images/classic/about/telescope.5a390a97.svg';
+
 import BannerSectionWrapper from "./banner.style";
-import imgHero from "assets/images/app/hero/mobile-screen.png";
-const BannerModern = () => {
+import CardExample from "../About-cards";
+
+const Banner = () => {
   return (
     <BannerSectionWrapper>
-      <Particle />
-      <Container fullWidthSM>
-        <Row Vcenter={true}>
-          <Col sm={7} md={6}>
-            <SectionTitle
-              className="section-title"
-              leftAlign={true}
-              UniWidth="100%"
-            >
-              <h4>30% off for new users for 1 month</h4>
-              <h1>
-                Drive Customers Passing Your Appslife With <span>Appion</span>
-              </h1>
+      <Container>
+           
+        <Row>
+          <Col sm={12}>
+            <SectionTitle UniWidth="65%">
+              <h2 style={{color: "white"}}>
+                Roam carefree with <span>CRoam</span>.
+              </h2>
             </SectionTitle>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad
-              minim veniam quis nostrud exercitation.
-            </p>
-            <VintageBox right={true} vintageOne={true}>
-              <Button className="banner-btn one">
-                <FaDownload className="icon-left" />
-                Download V1.4
-              </Button>
-              <Button className="banner-btn two">
-                <FaPlay className="icon-left" /> Watch Now
-              </Button>
-            </VintageBox>
           </Col>
-          <Col sm={5} md={6}>
-            <img
-              src={imgHero}
-              className="hero-img"
-              alt="prime-app hero image"
-            />
-          </Col>
+          <p style={{margin: "0 auto", width: "60%", textAlign: "center", color: "white"}}>
+          CRoam is a smart wearable based safety system designed for the safety of an individual. Running in the background, the system responds to the instinct of a person in emergency instantly when in need. Once initiated, the system will start capturing the scene along with location for submission to police, family and our AI-ML system for scene analysis.
+            {/* CRoam is a smart wearable based safety system designed for the safety of an individuals. Running in the background, the system responses to the instinct of a person in emergency instantly without actually activating it when in the need. A sequence of action is initiated which attempt to protect the user against a potential hazard.
+              We are looking forward for the acceptability of our solution. Filling <a href='https://docs.google.com/forms/d/e/1FAIpQLSe9awuK5mEsuCDYRN5GfNDoNWFgnkLPm9dEMtRBC3azV9n9IA/viewform'>this form</a> will not take more than two minutes. In return, you may be offered sample hardware/ beta release of the software/ both for free. */}
+          </p>
+        </Row>
+
+        <Row>
+          <div style={{display:"flex", margin: "0 auto"}}>
+          <VintageBox right={true} vintageTwo={true}>
+            <Button onClick={() => { window.open("https://docs.google.com/forms/d/e/1FAIpQLSe9awuK5mEsuCDYRN5GfNDoNWFgnkLPm9dEMtRBC3azV9n9IA/viewform") }} className="banner-btn one" primary>
+              <FaDownload className="icon-left" />
+                Get early beta access
+              </Button>
+            {/*<Button className="banner-btn two" secondary>*/}
+            {/*  <FaPlay className="icon-left" /> Watch Now*/}
+            {/*</Button>*/}
+          </VintageBox>
+          </div>
         </Row>
       </Container>
     </BannerSectionWrapper>
   );
 };
 
-export default BannerModern;
+export default Banner;

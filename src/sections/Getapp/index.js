@@ -24,10 +24,7 @@ const GetApp = () => {
         <Row Vcenter={true}>
           <Col xs={12} sm={7}>
             <div className="getapp-block">
-              <h3>Get early access!</h3>
-              <p>
-                We are in beta phase and testing our application. We are opening our application to very few people right now. Be the first one in your locality to get access and roam carefree.
-              </p>
+              <h3>Get the app now!</h3>
               <div className="btn-block">
                 {/*<Link href="#">*/}
                 {/*  <a className="getapp-btn apl-btn">*/}
@@ -51,21 +48,6 @@ const GetApp = () => {
               </div>
             </div>
           </Col>
-<<<<<<< HEAD
-          <Col xs={12} sm={5}>
-            <div className="getapp-thumb">
-              <img src={"/1.png"} alt="get the app" />
-=======
-          <Col sm={6}>
-            <div className="app-screen-image-wrapper">
-              <img src={"/main.jpeg"} alt="appion app screen" />
-              <div className="thumb one">
-                <img src={"/helpm.jpeg"} alt="appion app screen" />
-              </div>
-              <div className="thumb two">
-                <img src={"help1.jpeg"} alt="appion app screen" />
-              </div>
->>>>>>> 270e7b06764be828430352bd49d8fa1ae4492f21
             </div>
           </Col>
         </Row>

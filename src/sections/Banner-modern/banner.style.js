@@ -1,154 +1,207 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import imgHero from 'assets/images/app/hero/hero-two.png';
+import imgHero from "assets/images/classic/Policing-1.jpg";
 
 const BannerSectionWrapper = styled.div`
-    padding: 120px 0 0 0;
-    background: url(${imgHero}) no-repeat;
-    background-size: 56% 82%;
-    background-position: top right;
+  /* color: #1D316C; */
+  padding: 100px 0;
+  background: url(${imgHero}) top center/cover no-repeat;
+  background-attachment: fixed;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  .card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    @keyframes bounce {
-        from {
-            transform: translateY(0px);
-        }
-        to {
-            transform: translateY(-20px);
-        }
-        }
-        @-webkit-keyframes bounce {
-        from {
-            transform: translateY(0px);
-        }
-        to {
-            transform: translateY(-20px);
-        }
+  p {
+    margin: 0 0 60px 0;
+  }
+  .section-title {
+    h4 {
+      font-size: 85%;
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      span {
+        background: ${props => props.theme.primaryColor};
+        padding: 7px 13px;
+        color: ${props => props.theme.white};
+        border-radius: 25px;
+        margin-right: 7px;
+        line-height: 100%;
+      }
     }
-    .hero-img{
-        animation: bounce 1s infinite alternate;
-        -webkit-animation: bounce 1s infinite alternate;
+    h1, h2 {
+      display: flex;
+      justify-content: center;
+      font-weight: 300;
+      font-size: 4vw;
+      line-height: 75px;
+      margin: 28px 0 38px 0;
+      span{
+        font-weight: 600;
+      }
     }
- 
-    p{
-        font-size: 16px;
-        font-weight: 300;
-        color: #7A848E;
-        margin: 0 0 70px 0;
+  }
+  .banner-btn.one {
+      margin-top: 50px;
+    background: #52de97;
+    color: #e0f5ea;
+    &:hover {
+      background: #e0f5ea;
+      color: #52de97;
     }
-    h4{
+  }
+  .banner-btn.two {
+    background: #ffebec;
+    color: #fb7b81;
+    &:hover {
+      background: #fb7b81;
+      color: #ffebec;
+    }
+  }
+  .banner-btn + .banner-btn {
+    margin-left: 30px;
+  }
+  .app-screen-image-wrapper {
+    position: relative;
+    width: 75%;
+    margin: 0 0 0 auto;
+    .thumb {
+      position: absolute;
+      box-shadow: 0 0 40px ${props => props.theme.shadowColor};
+      border-radius: 10px;
+
+      img {
+        height: 100%;
+      }
+
+      &.one {
+        bottom: 3%;
+        left: -20%;
+        height: 50%;
+      }
+
+      &.two {
+        top: 3%;
+        right: -18%;
+        height: 28%;
+      }
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .app-screen-image-wrapper {
+      margin: 0 auto;
+      .thumb {
+        &.one {
+          left: -15%;
+        }
+      }
+    }
+    p {
+      margin: 0 0 45px 0;
+    }
+  }
+  @media only screen and (max-width: 912px) {
+    margin: 30px 0 0 0;
+    padding: 120px 0;
+    .section-title {
+      margin-bottom: 18px;
+      width: 100%;
+      h1 {
+        font-size: 33px;
+        line-height: 45px;
+        margin-bottom: 0;
+      }
+      h4 {
         margin-bottom: 8px;
-        font-size: 18px;
-        color: #FEBFB3;
-        text-transform: uppercase;
+      }
     }
-    .section-title{
-        h1{
-            font-weight: 300;
-            font-size: 60px;
-            line-height: 75px;
-            margin: 0 0 38px 0;
-            color: #2C0075;
-            span{
-                font-weight: 600;
-            }
-        }
-        
+    p {
+      margin: 0 20px 30px 0;
     }
-    .banner-btn.one{
-        background: #8A57DE;
-        color: #fff;
-        &:hover{
-            background: #EEE6FA;
-            color: #8A57DE;
-        }
+    .banner-btn {
+      min-width: 150px;
+      font-size: 14px;
     }
-    .banner-btn.two{
-        background: #FFEBEC;
-        color: #FB7B81;
-        &:hover{
-            background: #FB7B81;
-            color: #fff;
-        }
+    .banner-btn + .banner-btn {
+      margin-left: 12px;
     }
-    .banner-btn+.banner-btn{
-        margin-left: 30px;
+    .app-screen-image-wrapper {
+      width: 85%;
+      margin: 0 auto;
+      .thumb {
+        &.one,
+        &.two {
+          display: none;
+        }
+      }
     }
-    
-    @media only screen and (max-width: 912px) {
-        margin: 30px 0 0 0;
-        background-size: 57%;
-        padding: 120px 0 60px 0;
-        .section-title{
-            h1{
-                font-size: 32px;
-                line-height: 42px;
-                margin: 0 0 25px 0;
-            }
-        }
-        p{ 
-            margin: 0 0 30px 0;
-        }
-        .banner-btn{
-            min-width: 150px;
-            font-size: 14px;
-        }
-        .banner-btn+.banner-btn{
-            margin-left: 15px;
-        }
-     }
-     @media only screen and (max-width: 760px) {
-        padding: 130px 0 60px 0;
-     }
-     @media only screen and (max-width: 568px) {
-        background: none;
-        .hero-img{
-            display: none;
-        }
-     }
-     @media only screen and (max-width: 480px) {
-        padding: 120px 0 100px 0;
-        .section-title{
-            h1{
-                font-size: 35px;
-                line-height: 50px;
-            }
-        }
-         .vintage-box{
-             &:before{
-                 content: none;
-             }
-         }
-     }
-     @media only screen and (max-width: 380px) {
-       
-        .section-title{
-            h1{
-                font-size: 30px;
-                line-height: 46px;
-                margin: 0 0 30px 0;
-            }
-            h4{
-                font-size: 15px;
-            }
-        }
-        .banner-btn{
-            font-size: 14px;
-            min-width: 127px;
-            padding: 14px 12px; 
-        }
-        .banner-btn+.banner-btn{
-            margin-left: 15px;
-        }
-     }
-     @media only screen and (max-width: 330px) {
-        .section-title{
-            h1{
-                font-size: 23px;
-                line-height: 35px;
-            }
-        }
-     }
-     
-`
+    .vintage-box {
+      &:before {
+        display: none;
+      }
+    }
+  }
+  @media only screen and (max-width: 760px) {
+    padding: 100px 0px;
+
+    .banner-btn + .banner-btn {
+      margin-left: 30px;
+    }
+    .app-screen-image-wrapper {
+      margin-top: 70px;
+      width: 75%;
+    }
+  }
+  @media only screen and (max-width: 568px) {
+    .app-screen-image-wrapper {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .section-title {
+      h1 {
+        font-size: 35px;
+        line-height: 50px;
+      }
+    }
+    .vintage-box {
+      &:before {
+        content: none;
+      }
+    }
+  }
+  @media only screen and (max-width: 380px) {
+    .section-title {
+      h1 {
+        font-size: 30px;
+        line-height: 46px;
+        margin: 0 0 30px 0;
+      }
+      h4 {
+        font-size: 12px;
+      }
+    }
+    .banner-btn {
+      font-size: 14px;
+      min-width: 127px;
+      padding: 14px 12px;
+    }
+    .banner-btn + .banner-btn {
+      margin-left: 15px;
+    }
+  }
+  @media only screen and (max-width: 330px) {
+    .section-title {
+      h1 {
+        font-size: 23px;
+        line-height: 35px;
+      }
+    }
+  }
+`;
 
 export default BannerSectionWrapper;
