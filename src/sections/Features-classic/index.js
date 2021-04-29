@@ -24,6 +24,7 @@ const FeaturesClassic = () => {
         <SectionTitle UniWidth="65%">
           <h2>
             <span>Features</span>
+            What<span> CROAM </span>app do
           </h2>
         </SectionTitle>
 
@@ -31,7 +32,6 @@ const FeaturesClassic = () => {
           <Col xs={12} sm={6} >
             <div className="fetures-block">
               <div className="features-icon">
-                <img src={Icon2} alt="prime app features icon" />
               </div>
               <h3>SOS button enabled</h3>
               <p>
@@ -42,7 +42,6 @@ const FeaturesClassic = () => {
           <Col xs={12} sm={6} >
             <div className="fetures-block">
               <div className="features-icon">
-                <img src={Icon5} alt="prime app features icon" />
               </div>
               <h3>Voice based initaiation</h3>
               <p>
@@ -64,30 +63,7 @@ const FeaturesClassic = () => {
           <Col xs={12} sm={6} >
             <div className="fetures-block">
               <div className="features-icon">
-                <img src={Icon6} alt="prime app features icon" />
-              </div>
-              <h3>Detect emergeny situations</h3>
-              <p>
-                The degree of emergency is detected by analysing the captured images through state of the art Machine Learning techniques.
-              </p>
-            </div>
-          </Col> */}
-          <Col xs={12} sm={6} >
-            <div className="fetures-block">
-              <div className="features-icon">
-                <img src={Icon1} alt="prime app features icon" />
-              </div>
-              <h3>Report Incident Instantly</h3>
-              <p>
-                Through CROAM you can report any criminal incidents instantly to the local authorities.
-              </p>
-            </div>
-          </Col>
-
-          <Col xs={12} sm={6} >
-            <div className="fetures-block">
-              <div className="features-icon">
-                <img src={Icon3} alt="prime app features icon" />
+                <img src={"/family.png"} alt="prime app features icon" />
               </div>
               <h3>Keep family/police informed</h3>
               <p>
@@ -121,9 +97,6 @@ const FeaturesClassic = () => {
           <Col xs={12} sm={4} md={4}>
             <div className="fetures-block">
               <div className="features-icon">
-                <img src={Icon8} alt="prime app features icon" />
-              </div>
-              <h3>Solve cases quickly</h3>
               <p>
                 CRoam app collects the proof of incidents and hence reduces time to collect incidents proof.
               </p>
@@ -132,7 +105,6 @@ const FeaturesClassic = () => {
           <Col xs={12} sm={4} md={4}>
             <div className="fetures-block">
               <div className="features-icon">
-                <img src={Icon9} alt="prime app features icon" />
               </div>
               <h3>Keep the society crime free</h3>
               <p>

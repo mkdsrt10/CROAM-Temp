@@ -6,6 +6,7 @@ import Main from "../src/components/main";
 import Navigation from "sections/Navigation";
 import Login from "sections/LoginAdmin";
 import Footer from "sections/Footer-classic";
+import FeaturesClassic2 from "sections/Features-classic2";
 
 import { GlobalStyle } from "sections/app.style";
 import theme from "../src/reusecore/utils/theme";

@@ -168,6 +168,20 @@ const AppScreensClassic = () => {
             </SlickSlider>
           </Col>
         </Row>
+        <Row>
+          <Col xs={12} sm={12}>
+            <SectionTitle
+                className="section-title-block"
+                leftAlign={true}
+                UniWidth="100%"
+                mb={50}
+            >
+              <h2 style={{marginTop:50}}>
+                <span>We are here to solve these problem.</span>
+              </h2>
+            </SectionTitle>
+          </Col>
+        </Row>
       </Container>
     </AppScreenSctionWrapper>
   );

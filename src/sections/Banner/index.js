@@ -25,19 +25,47 @@ const Banner = () => {
               leftAlign={true}
               UniWidth="100%"
             >
+<<<<<<< HEAD
+              <h1>
+                <span>CRoam</span> on <br></br> Crime off
+              </h1>
+              <h4>
+                <span> Carefree Roaming</span>
+              </h4>
+            </SectionTitle>
+            <p>
+              <br></br><br></br>
+              Safety has become a major concern today. We, AnjaneyaServices is a group which is concerned about these issues. We provide systems and solutions for personal safety and well-being. Through our innovative sytsems, we aim 0% crime and 100% justice to all. We provide efficient emergency response and alerting systems and are aiming towards a nation-wide standard emergency response system.
+            {/*Safety has become a major concern today. The possibility that a person may have to face an emergency situation, even at their own homes, is increasing continuously. Considerable loss of health and property has to be born by innocent people and in many cases, it is just a matter of seconds between life and death. Criminals are getting more and more expert at committing crimes and leaving no evidence; and there is no point in seeking legal help without evidence. This makes deserving victims devoid of justice.*/}
+            {/*<br></br><br></br>*/}
+
+            {/*We, AnjaneyaServices is a group which is concerned about these issues. We provide systems and solutions for personal safety and well-being. Through our innovative sytsems, we aim 0% crime and 100% justice to all. We provide efficient emergency response and alerting systems and are aiming towards a nation-wide standard emergency response system.*/}
+            </p>
+
+            <VintageBox right={true} vintageOne={true}>
+              <Button onClick={() => {window.open("https://docs.google.com/forms/d/e/1FAIpQLSe9awuK5mEsuCDYRN5GfNDoNWFgnkLPm9dEMtRBC3azV9n9IA/viewform")}} className="banner-btn one" primary>
+                <FaDownload className="icon-left" />
+                Get early beta access
+              </Button>
+              {/*<Button className="banner-btn two" secondary>*/}
+              {/*  <FaPlay className="icon-left" /> Watch Now*/}
+              {/*</Button>*/}
+            </VintageBox>
+=======
               <h1><span>About Us.</span></h1>
             </SectionTitle>            
+>>>>>>> 270e7b06764be828430352bd49d8fa1ae4492f21
           </Col>
 
           {/* <Col sm={12} sm={5}>
             <div className="app-screen-image-wrapper">
-              <img src={"/main.jpeg"} alt="appion app screen" />
+              <img src={"/1.png"} alt="appion app screen" />
               <div className="thumb one">
-                <img src={"/helpm.jpeg"} alt="appion app screen" />
+                <img src={"/2.png"} alt="appion app screen" />
               </div>
-              <div className="thumb two">
-                <img src={"help1.jpeg"} alt="appion app screen" />
-              </div>
+              {/*<div className="thumb two">*/}
+              {/*  <img src={"help1.jpeg"} alt="appion app screen" />*/}
+              {/*</div>*/}
             </div>
           </Col> */}
         </Row>

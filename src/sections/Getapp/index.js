@@ -22,10 +22,9 @@ const GetApp = () => {
       <img className="section__particle four" src={particle4} alt="img" />
       <Container>
         <Row Vcenter={true}>
-          <Col xs={12} sm={6}>
+          <Col xs={12} sm={7}>
             <div className="getapp-block">
               <h3>Get the app now!</h3>
-              
               <div className="btn-block">
                 {/*<Link href="#">*/}
                 {/*  <a className="getapp-btn apl-btn">*/}
@@ -37,7 +36,7 @@ const GetApp = () => {
                 {/*  </a>*/}
                 {/*</Link>*/}
 
-                <Link href="#">
+                <Link href="https://docs.google.com/forms/d/e/1FAIpQLSe9awuK5mEsuCDYRN5GfNDoNWFgnkLPm9dEMtRBC3azV9n9IA/viewform">
                   <a className="getapp-btn">
                     <FaGooglePlay />
                     <p>
@@ -49,15 +48,6 @@ const GetApp = () => {
               </div>
             </div>
           </Col>
-          <Col sm={6}>
-            <div className="app-screen-image-wrapper">
-              <img src={"/main.jpeg"} alt="appion app screen" />
-              <div className="thumb one">
-                <img src={"/helpm.jpeg"} alt="appion app screen" />
-              </div>
-              <div className="thumb two">
-                <img src={"help1.jpeg"} alt="appion app screen" />
-              </div>
             </div>
           </Col>
         </Row>
