@@ -13,14 +13,14 @@ import {BACKEND_URL} from "../../Constant";
 import {router} from "next/client";
 
 const BoxStyled = styled(Box)`
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
 `;
 
 const BoxInner = styled(Box)`
   margin-top: -65px;
-  min-height: 100vh;
+  min-height: 50vh;
 `;
 
 const FormStyled = styled.form`
@@ -46,14 +46,14 @@ const AForgot = styled.a`
   text-decoration: none !important;
 `;
 
-const Login = ({ admin, setToken, setUser }) => {
+const Login = ({ admin, setToken, setUser, setType }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const loginF = async (e) => {
     e.preventDefault();
 
-    const res = await fetch(BACKEND_URL+"/users/login", {
+    const res = await fetch(BACKEND_URL+"/police/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -71,10 +71,11 @@ const Login = ({ admin, setToken, setUser }) => {
       alert(data.status);
       setToken(data.accesstoken)
       setUser(data.user)
-      localStorage.setItem("token",data.accesstoken)
-      localStorage.setItem("user",data.user)
+      setType("Police")
+      // localStorage.setItem("token",data.accesstoken)
+      // localStorage.setItem("user",)
       // window.open("/blog-grid", "_self");
-      await router.push("/blog-grid")
+      router.push("/blog-grid")
     } else {
       alert(data.error);
     }
@@ -125,12 +126,6 @@ const Login = ({ admin, setToken, setUser }) => {
                       >
                         Login
                       </Button>
-                      <Box mt={3}>
-                        Don't have an account yet?{" "}
-                        <Link href="/signup">
-                          <a>Signup.</a>
-                        </Link>
-                      </Box>
                     </FormStyled>
                   </Col>
                 </Row>

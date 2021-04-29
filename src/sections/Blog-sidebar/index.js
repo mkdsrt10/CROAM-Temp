@@ -13,9 +13,7 @@ import WdThumb3 from 'assets/images/blog/widgets-thumb/03.png';
 
 import BlogSideBarWrapper from './blogSidebar.style';
 
-const SideBar = () => {
-  const [country, setCountry] = useState("");
-  const [region, setRegion] = useState("");
+const SideBar = ({country, setCountry, region, setRegion}) => {
 
   return (
     <BlogSideBarWrapper>
@@ -42,91 +40,91 @@ const SideBar = () => {
         </div>
       </div>
 
-      <div className='sidebar-widgets recent-post'>
-        <div className="widgets-title">
-          <h3>Latest Post</h3>
-        </div>
-        <div className="recent-post-block">
-          <img src={WdThumb1} alt="prime-app" />
-          <div className="recent-post-content-block">
-            <Link href="#">
-              <a>
-                <h3> Now led tedious shy. </h3>
-              </a>
-            </Link>
-            <div className="post-meta-block">
-              By:{' '}
-              <Link href="#">
-                <a> Admin </a>
-              </Link>
-              <Link href="#">
-                <a> Aug 07, 2020 </a>
-              </Link>
-            </div>
-          </div>
-        </div>
+      {/*<div className='sidebar-widgets recent-post'>*/}
+      {/*  <div className="widgets-title">*/}
+      {/*    <h3>Latest Post</h3>*/}
+      {/*  </div>*/}
+      {/*  <div className="recent-post-block">*/}
+      {/*    <img src={WdThumb1} alt="prime-app" />*/}
+      {/*    <div className="recent-post-content-block">*/}
+      {/*      <Link href="#">*/}
+      {/*        <a>*/}
+      {/*          <h3> Now led tedious shy. </h3>*/}
+      {/*        </a>*/}
+      {/*      </Link>*/}
+      {/*      <div className="post-meta-block">*/}
+      {/*        By:{' '}*/}
+      {/*        <Link href="#">*/}
+      {/*          <a> Admin </a>*/}
+      {/*        </Link>*/}
+      {/*        <Link href="#">*/}
+      {/*          <a> Aug 07, 2020 </a>*/}
+      {/*        </Link>*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
 
-        <div className="recent-post-block">
-          <img src={WdThumb2} alt="prime-app" />
-          <div className="recent-post-content-block">
-            <Link href="#">
-              <a>
-                <h3> Now led tedious shy. </h3>
-              </a>
-            </Link>
-            <div className="post-meta-block">
-              By:{' '}
-              <Link href="#">
-                <a> Admin </a>
-              </Link>
-              <Link href="#">
-                <a> Aug 07, 2020 </a>
-              </Link>
-            </div>
-          </div>
-        </div>
+      {/*  <div className="recent-post-block">*/}
+      {/*    <img src={WdThumb2} alt="prime-app" />*/}
+      {/*    <div className="recent-post-content-block">*/}
+      {/*      <Link href="#">*/}
+      {/*        <a>*/}
+      {/*          <h3> Now led tedious shy. </h3>*/}
+      {/*        </a>*/}
+      {/*      </Link>*/}
+      {/*      <div className="post-meta-block">*/}
+      {/*        By:{' '}*/}
+      {/*        <Link href="#">*/}
+      {/*          <a> Admin </a>*/}
+      {/*        </Link>*/}
+      {/*        <Link href="#">*/}
+      {/*          <a> Aug 07, 2020 </a>*/}
+      {/*        </Link>*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
 
-        <div className="recent-post-block">
-          <img src={WdThumb3} alt="prime-app" />
-          <div className="recent-post-content-block">
-            <Link href="#">
-              <a>
-                <h3> Now led tedious shy. </h3>
-              </a>
-            </Link>
-            <div className="post-meta-block">
-              By:{' '}
-              <Link href="#">
-                <a> Admin </a>
-              </Link>
-              <Link href="#">
-                <a> Aug 07, 2020 </a>
-              </Link>
-            </div>
-          </div>
-        </div>
+      {/*  <div className="recent-post-block">*/}
+      {/*    <img src={WdThumb3} alt="prime-app" />*/}
+      {/*    <div className="recent-post-content-block">*/}
+      {/*      <Link href="#">*/}
+      {/*        <a>*/}
+      {/*          <h3> Now led tedious shy. </h3>*/}
+      {/*        </a>*/}
+      {/*      </Link>*/}
+      {/*      <div className="post-meta-block">*/}
+      {/*        By:{' '}*/}
+      {/*        <Link href="#">*/}
+      {/*          <a> Admin </a>*/}
+      {/*        </Link>*/}
+      {/*        <Link href="#">*/}
+      {/*          <a> Aug 07, 2020 </a>*/}
+      {/*        </Link>*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
 
-        <div className="recent-post-block">
-          <img src={WdThumb1} alt="prime-app" />
-          <div className="recent-post-content-block">
-            <Link href="#">
-              <a>
-                <h3> Now led tedious shy. </h3>
-              </a>
-            </Link>
-            <div className="post-meta-block">
-              By:{' '}
-              <Link href="#">
-                <a> Admin </a>
-              </Link>
-              <Link href="#">
-                <a> Aug 07, 2020 </a>
-              </Link>
-            </div>
-          </div>
-        </div>
+      {/*  <div className="recent-post-block">*/}
+      {/*    <img src={WdThumb1} alt="prime-app" />*/}
+      {/*    <div className="recent-post-content-block">*/}
+      {/*      <Link href="#">*/}
+      {/*        <a>*/}
+      {/*          <h3> Now led tedious shy. </h3>*/}
+      {/*        </a>*/}
+      {/*      </Link>*/}
+      {/*      <div className="post-meta-block">*/}
+      {/*        By:{' '}*/}
+      {/*        <Link href="#">*/}
+      {/*          <a> Admin </a>*/}
+      {/*        </Link>*/}
+      {/*        <Link href="#">*/}
+      {/*          <a> Aug 07, 2020 </a>*/}
+      {/*        </Link>*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
 
-      </div>
+      {/*</div>*/}
 
       {/* <div className='sidebar-widgets catagorie'>
         <div className="widgets-title">
@@ -179,7 +177,7 @@ const SideBar = () => {
                 <span>App</span>
                 <em>(18)</em>
               </a>
-            </Link> 
+            </Link>
           </li>
         </ul>
       </div> */}

@@ -10,6 +10,7 @@ import {
   Box,
   Text,
   Input,
+    Select,
   InputGroup,
   Checkbox,
 } from "reusecore/Core";
@@ -18,6 +19,7 @@ import PageWrapper from "reusecore/PageWrapper";
 import Logo from "reusecore/Logo";
 import { device } from "reusecore/utils";
 import { use } from "chai";
+import {BACKEND_URL} from "../../Constant";
 
 const BoxStyled = styled(Box)`
   min-height: 100vh;
@@ -47,14 +49,16 @@ const AForgot = styled.a`
 `;
 
 const SignUp = () => {
-  
+
   const [user, setUser] = useState({
     name: "",
     email: "",
+    gender:"",
     mobileNum: "",
     password: "",
     cpassword: "",
     location: "",
+    age:"",
     pincode: "",
     emergencyName1: "",
     emergencyNum1: "",
@@ -69,6 +73,10 @@ const SignUp = () => {
     await setUser({ ...user, [name]: value });
   };
 
+  const handleInputSelect = async (value) => {
+    await setUser({ ...user, gender: value });
+  }
+
   const registerUser = async (e) => {
     // console.log("Clicked");
     e.preventDefault();
@@ -76,6 +84,7 @@ const SignUp = () => {
     const {
       name,
       email,
+        gender, age,
       mobileNum,
       password,
       cpassword,
@@ -87,7 +96,7 @@ const SignUp = () => {
       emergencyNum2,
     } = user;
 
-    const res = await fetch("https://croam-web-backend.vercel.app/register", {
+    const res = await fetch(BACKEND_URL+"/users/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -95,20 +104,22 @@ const SignUp = () => {
       body: JSON.stringify({
         name,
         email,
-        mobileNum,
+        "number":mobileNum,
+        gender:gender.value,
+        age,
         password,
         cpassword,
-        location,
+        // location,
         pincode,
-        emergencyName1,
-        emergencyNum1,
-        emergencyName2,
-        emergencyNum2,
+        emcName1:emergencyName1,
+        emcPhone1:emergencyNum1,
+        emcName2:emergencyName2,
+        emcPhone2:emergencyNum2,
       }),
     });
 
     const data = await res.json();
-    if(res.status === 201) {
+    if(data.status === 201) {
       alert(data.message);
       window.open("/login", "_self");
     }
@@ -116,6 +127,12 @@ const SignUp = () => {
       alert(data.error);
     }
   };
+
+  const genderOptions = [
+    { value: 'male', label: 'Male' },
+    { value: 'female', label: 'Female' },
+    { value: 'other', label: 'Others' },
+  ];
 
   return (
     <>
@@ -173,6 +190,24 @@ const SignUp = () => {
                           placeholder="Mobile number"
                           name="mobileNum"
                           value={user.mobileNum}
+                        />
+                      </Box>
+                      <Box mb={3}>
+                        <Select
+                            onChange={handleInputSelect}
+                            options={genderOptions}
+                            placeholder={"Gender"}
+                            name="gender"
+                            value={user.gender}
+                        />
+                      </Box>
+                      <Box mb={3}>
+                        <Input
+                            onChange={handleInputs}
+                            type="text"
+                            placeholder="Age"
+                            name="age"
+                            value={user.age}
                         />
                       </Box>
                       <Box mb={3}>
